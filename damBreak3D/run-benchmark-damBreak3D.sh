@@ -12,24 +12,26 @@ mkdir -p $resultsFolder
 for resolution in ${resolutions}; do
    for sample in $(seq 1 ${samples}); do
 
-      # setup and run example using TNL-SPH
+      # Setup and run example using TNL-SPH
       # note: this one is necessary since it captures the device metadata are generated here
       if [[ $* == *--tnlsph* ]]; then
-         echo "TNL."
-         cd TNL-SPH_resources
-         python3 ./generateCaseWithDSPHGenCase.py -resolution=${resolution} --generateNewGeometry
-         make clean
+         echo "Running TNL-SPH solver with resolution ${resolution}."
+         cd resources_tnl-sph
+         python3 ./init.py -resolution=${resolution} --generateNewGeometry
+         mkdir -p build
+         cmake ..
          make
-         ./damBreak3D_WCSPH-DBC
          cd ..
-         mv TNL-SPH_resources/results/time_measurements.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.json
-         mv TNL-SPH_resources/results/device.metadata.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.device_metadata.json
-         mv TNL-SPH_resources/results/case_metadata.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.case_metadata.json
+         python3 ./run.py
+         cd ..
+         mv resources_tnl-sph/results/time_measurements.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.json
+         mv resources_tnl-sph/results/device.metadata.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.device_metadata.json
+         mv resources_tnl-sph/results/case_metadata.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.case_metadata.json
       fi
 
       # Setup and run example using DualSPHysics
       if [[ $* == *--dualsphysics* ]]; then
-         echo "DSPH."
+         echo "Running DualSPHysics solver with resolution ${resolution}."
          cd resoucres_dualsphysics
          cp damBreak3D_WCSPH-DBC_Def_template.xml damBreak3D_WCSPH-DBC_Def.xml
          sed -i "s/resolutionPlaceholder/${resolution}/" damBreak3D_WCSPH-DBC_Def.xml
@@ -40,7 +42,7 @@ for resolution in ${resolutions}; do
 
       # Setup and run example using OpenFPM
       if [[ $* == *--openfpm* ]]; then
-         echo "OpenFPM."
+         echo "Running OpenFPM solver with resolution ${resolution}."
          cd resources_openfpm-gpu-opt
          python3 ./setup_and_run.py
          ./run.sh
