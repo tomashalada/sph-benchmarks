@@ -2,8 +2,9 @@
 
 import numpy as np
 import sys
+import os
 import subprocess
-sys.path.append('../../../src/tools')
+sys.path.append( os.environ[ "tnlsphdir" ] + '/src/tools' )
 import saveParticlesVTK
 import vtk
 from vtk.numpy_interface import dataset_adapter as dsa
@@ -117,7 +118,6 @@ def write_simulation_params( setup ):
 if __name__ == "__main__":
     import sys
     import argparse
-    import os
 
     argparser = argparse.ArgumentParser(description="Heat equation example initial condition generator")
     g = argparser.add_argument_group("resolution parameters")

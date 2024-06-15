@@ -1,5 +1,5 @@
-include example.mk
-include common.mk
+include $(openfpm_example_mk)
+include $(openfpm_common_mk)
 
 OBJ = main.o
 

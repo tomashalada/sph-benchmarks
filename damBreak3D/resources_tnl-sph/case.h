@@ -1,6 +1,7 @@
 #include <TNL/Config/parseCommandLine.h>
 #include <TNL/Config/parseINIConfigFile.h>
 #include <TNL/Logger.h>
+#include <TNL/Benchmarks/Benchmarks.h>
 
 #include <SPH/configSetup.h>
 #include "template/config.h"
@@ -135,5 +136,21 @@ int main( int argc, char* argv[] )
    }
 
    sph.writeEpilog( log );
+
+   // save timers
+   std::string saveTimersOutputName = sph.outputDirecotry + "/time_measurements";
+   sph.timeMeasurement.writeInfoToJson( saveTimersOutputName, sph.timeStepping.getStep() );
+
+   std::map< std::string, std::string > caseMetadata;
+   caseMetadata.insert({ "number-of-fluid-particles",    std::to_string( sph.fluid->particles->getNumberOfParticles()    ) } );
+   caseMetadata.insert({ "number-of-boundary-particles", std::to_string( sph.boundary->particles->getNumberOfParticles() ) } );
+   caseMetadata.insert({ "time-step",                    std::to_string( sph.timeStepping.getTimeStep()                  ) } );
+   caseMetadata.insert({ "end-time",                     std::to_string( sph.timeStepping.getEndTime()                   ) } );
+   caseMetadata.insert({ "number-of-time-steps",         std::to_string( sph.timeStepping.getStep()                      ) } );
+   TNL::Benchmarks::writeMapAsJson( caseMetadata, "results/case_metadata", ".json" );
+
+   std::map< std::string, std::string > metadata = TNL::Benchmarks::getHardwareMetadata();
+   TNL::Benchmarks::writeMapAsJson( metadata, "results/device", ".metadata.json" );
+
 }
 

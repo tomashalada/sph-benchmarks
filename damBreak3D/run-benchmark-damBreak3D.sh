@@ -19,7 +19,9 @@ for resolution in ${resolutions}; do
          cd resources_tnl-sph
          python3 ./init.py -resolution=${resolution} --generateNewGeometry
          mkdir -p build
+         cd build
          cmake ..
+         make clean
          make
          cd ..
          python3 ./run.py
