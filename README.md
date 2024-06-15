@@ -28,8 +28,8 @@ ${OPENFPM_PATH}/openfpm_dependencies/LIBHILBERT/lib:\
 ${OPENFPM_PATH}/openfpm_dependencies/PETSC/lib:\
 ${OPENFPM_PATH}/openfpm_dependencies/OPENBLAS/lib"
 export PURE_PYTHON=1
-export openfpm_example_mk=/home/tomas/Work/openfpm_source/openfpm/example/example.mk
-export openfpm_common_mk=/home/tomas/Work/openfpm_source/openfpm/example/common.mk
+export openfpm_example_mk=${OPENFPM_PATH}/openfpm/example/example.mk
+export openfpm_common_mk=${OPENFPM_PATH}/openfpm/example/common.mk
 
 # Run benchmark for selected solvers using following flags --tnlsph --dualsphysics --openfpm
 cd damBreak3D
