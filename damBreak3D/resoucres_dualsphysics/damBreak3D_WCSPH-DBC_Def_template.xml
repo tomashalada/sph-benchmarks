@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<case>
+    <casedef>
+        <constantsdef>
+            <gravity x="0" y="0" z="-9.81" comment="Gravitational acceleration" units_comment="m/s^2" />
+            <rhop0 value="1000" comment="Reference density of the fluid" units_comment="kg/m^3" />
+            <hswl value="0" auto="true" comment="Maximum still water level to calculate speedofsound using coefsound" units_comment="metres (m)" />
+            <gamma value="7" comment="Polytropic constant for water used in the state equation" />
+            <speedsystem value="0" auto="true" comment="Maximum system speed (by default the dam-break propagation is used)" />
+            <coefsound value="20" comment="Coefficient to multiply speedsystem" />
+            <speedsound value="0" auto="true" comment="Speed of sound to use in the simulation (by default speedofsound=coefsound*speedsystem)" />
+            <!-- _coefh value="0.975807" comment="Coefficient to calculate the smoothing length (h=coefh*sqrt(3*dp^2) in 3D)" /-->
+            <hdp value="2" comment="Alternative option to calculate the smoothing length (h=hdp*dp)" />
+            <cflnumber value="0.2" comment="Coefficient to multiply dt" />
+        </constantsdef>
+        <mkconfig boundcount="241" fluidcount="9" />
+        <geometry>
+            <definition dp="resolutionPlaceholder" units_comment="metres (m)">
+                <pointmin x="-1" y="-1" z="-1" />
+                <pointmax x="3.3" y="1.1" z="1.1" />
+            </definition>
+            <commands>
+                <list name="GeometryForNormals">
+                    <setactive drawpoints="0" drawshapes="1"/>
+                    <setshapemode>actual | bound</setshapemode>
+                    <setmkbound mk="0" />
+                    <setnormalinvert invert="true" />
+					<!-- Left side of the tank -->
+                    <drawbox>
+                        <boxfill>all^top^right</boxfill>
+                        <point x="#Tankpx1" y="#Tankpy1" z="#Tankpz1" />
+                        <endpoint x="#Boxpx1-Dpm" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="-0.5" />
+                    </drawbox>
+					<!-- Right side of the tank -->
+                    <drawbox>
+                        <boxfill>all^top^left</boxfill>
+                        <point x="#Boxpx2+Dpm" y="#Tankpy1" z="#Tankpz1" />
+                        <endpoint x="#Tankpx2" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="-0.5" />
+                    </drawbox>
+					<!-- Front-central side of the tank -->
+                    <drawbox>
+                        <boxfill>front|bottom</boxfill>
+                        <point x="#Boxpx1-Dpm" y="#Tankpy1" z="#Tankpz1" />
+                        <endpoint x="#Boxpx2+Dpm" y="#Boxpy1-Dpm" z="#Tankpz2" />
+                        <layers vdp="-0.5" />
+                    </drawbox>
+					<!-- Back-central side of the tank -->
+                    <drawbox>
+                        <boxfill>back|bottom</boxfill>
+                        <point x="#Boxpx1-Dpm" y="#Boxpy2+Dpm" z="#Tankpz1" />
+                        <endpoint x="#Boxpx2+Dpm" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="-0.5" />
+                    </drawbox>
+					<!-- Central obstacle -->
+                    <setnormalinvert invert="false" />
+					<setmkbound mk="1" />
+                    <drawbox>
+                        <boxfill>all^bottom</boxfill>
+                        <point x="#Boxpx1" y="#Boxpy1" z="#Tankpz1+Dpm" />
+                        <endpoint x="#Boxpx2" y="#Boxpy2" z="#Boxpz2" />
+                        <layers vdp="0.5" />
+                    </drawbox>
+                    <shapeout file="hdp" />
+                    <resetdraw />
+                </list>
+                <mainlist>
+                    <!-- Defines actual dimensions of tank -->
+                    <newvarcte Dpm="Dp/2" />
+                    <newvarcte DefTankpx="0" DefTankpy="0" DefTankpz="0" />
+                    <newvarcte DefTanksx="3.220" DefTanksy="1.0" DefTanksz="1.0" />
+                    <newvarcte DefBoxpx="0.660" DefBoxpy="0.300" />
+                    <newvarcte DefBoxsx="0.160" DefBoxsy="0.400" DefBoxsz="0.160" />
+                    <!-- Defines dimensions and positions according to pointmin and dp -->
+                    <newvarcte Tankpx1="roundposx(DefTankpx)" Tankpx2="roundposx(DefTankpx+DefTanksx)" />
+                    <newvarcte Tankpy1="roundposy(DefTankpy)" Tankpy2="roundposy(DefTankpy+DefTanksy)" />
+                    <newvarcte Tankpz1="roundposz(DefTankpz)" Tankpz2="roundposz(DefTankpz+DefTanksz)" />
+                    <newvarcte Boxpx1="roundposx(DefBoxpx)" Boxpx2="roundposx(DefBoxpx+DefBoxsx)" />
+                    <newvarcte Boxpy1="roundposy(DefBoxpy)" Boxpy2="roundposy(DefBoxpy+DefBoxsy)" />
+                    <newvarcte Boxpz2="roundposy(DefTankpz+DefBoxsz)" />
+                    <!-- Actual geometry at dp/2 -->
+                    <runlist name="GeometryForNormals" />
+                    <!-- Boundary particles -->
+                    <setdrawmode mode="full" />
+                    <setmkbound mk="0" />
+					<!-- Left side of the tank -->
+                    <drawbox>
+                        <boxfill>all^top^right</boxfill>
+                        <point x="#Tankpx1" y="#Tankpy1" z="#Tankpz1" />
+                        <endpoint x="#Boxpx1" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="0,1,2" />
+                    </drawbox>
+					<!-- Right side of the tank -->
+                    <drawbox>
+                        <boxfill>all^top^left</boxfill>
+                        <point x="#Boxpx2" y="#Tankpy1" z="#Tankpz1" />
+                        <endpoint x="#Tankpx2" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="0,1,2" />
+                    </drawbox>
+					<!-- Front-central side of the tank -->
+                    <drawbox>
+                        <boxfill>front|bottom</boxfill>
+                        <point x="#Boxpx1" y="#Tankpy1" z="#Tankpz1" />
+                        <endpoint x="#Boxpx2" y="#Boxpy1" z="#Tankpz2" />
+                        <layers vdp="0,1,2" />
+                    </drawbox>
+					<!-- Back-central side of the tank -->
+                    <drawbox>
+                        <boxfill>back|bottom</boxfill>
+                        <point x="#Boxpx1" y="#Boxpy2" z="#Tankpz1" />
+                        <endpoint x="#Boxpx2" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="0,1,2" />
+                    </drawbox>
+					<!-- Central obstacle -->
+					<setmkbound mk="1" />
+                    <drawbox>
+                        <boxfill>all^bottom</boxfill>
+                        <point x="#Boxpx1" y="#Boxpy1" z="#Tankpz1-Dp*2" />
+                        <endpoint x="#Boxpx2" y="#Boxpy2" z="#Boxpz2" />
+                        <layers vdp="0,-1,-2" />
+                    </drawbox>
+                    <_shapeout file="parts" />
+                    <!-- Fluid particles -->
+                    <setmkfluid mk="0" />
+                    <fillbox x="2.1" y="0.1" z="0.2">
+                        <modefill>void</modefill>
+                        <point x="1.992" y="0" z="0" />
+                        <size x="1.4" y="1" z="0.55" />
+                    </fillbox>
+                    <shapeout file="" />
+                </mainlist>
+            </commands>
+        </geometry>
+        <normals>
+			<distanceh value="2.0" comment="Maximum distance (H*distanceh) to compute normals data (default=2)" />
+			<geometryfile file="[CaseName]_hdp_Actual.vtk" comment="File with boundary geometry (VTK format)" />
+            <svshapes value="1" comment="Saves VTK with geometry in triangles and quads with its normals for debug (default=0)" />
+        </normals>
+    </casedef>
+    <execution>
+        <parameters>
+            <parameter key="SavePosDouble" value="0" comment="Saves particle position using double precision (default=0)" />
+            <parameter key="Boundary" value="1" comment="Boundary method 1:DBC, 2:mDBC (default=1)" />
+            <parameter key="StepAlgorithm" value="1" comment="Step Algorithm 1:Verlet, 2:Symplectic (default=1)" />
+            <parameter key="VerletSteps" value="40" comment="Verlet only: Number of steps to apply Euler timestepping (default=40)" />
+            <parameter key="Kernel" value="2" comment="Interaction Kernel 1:Cubic Spline, 2:Wendland, 3:Gaussian (default=2)" />
+            <parameter key="ViscoTreatment" value="1" comment="Viscosity formulation 1:Artificial, 2:Laminar+SPS (default=1)" />
+            <parameter key="Visco" value="0.02" comment="Viscosity value" />
+            <parameter key="ViscoBoundFactor" value="0" comment="Multiply viscosity value with boundary (default=1)" />
+			   <parameter key="DensityDT" value="1" comment="Density Diffusion Term 0:None, 1:Molteni, 2:Fourtakas, 3:Fourtakas(full) (default=0)" />
+			   <parameter key="DensityDTvalue" value="0.1" comment="DDT value (default=0.1)" />
+            <parameter key="Shifting" value="0" comment="Shifting mode 0:None, 1:Ignore bound, 2:Ignore fixed, 3:Full (default=0)" />
+            <parameter key="ShiftCoef" value="-2" comment="Coefficient for shifting computation (default=-2)" />
+            <parameter key="ShiftTFS" value="0" comment="Threshold to detect free surface. Typically 1.5 for 2D and 2.75 for 3D (default=0)" />
+            <parameter key="RigidAlgorithm" value="1" comment="Rigid Algorithm 0:collision-free, 1:SPH, 2:DEM, 3:Chrono (default=1)" />
+            <parameter key="FtPause" value="0.0" comment="Time to freeze the floatings at simulation start (warmup) (default=0)" units_comment="seconds" />
+            <parameter key="CoefDtMin" value="0.05" comment="Coefficient to calculate minimum time step dtmin=coefdtmin*h/speedsound (default=0.05)" />
+            <parameter key="DtIni" value="0" comment="Initial time step. Use 0 to defult use (default=h/speedsound)" units_comment="seconds" />
+            <parameter key="DtMin" value="0" comment="Minimum time step. Use 0 to defult use (default=coefdtmin*h/speedsound)" units_comment="seconds" />
+            <parameter key="DtFixed" value="0" comment="Fixed Dt value. Use 0 to disable (default=disabled)" units_comment="seconds" />
+            <parameter key="DtFixedFile" value="NONE" comment="Dt values are loaded from file. Use NONE to disable (default=disabled)" units_comment="milliseconds (ms)" />
+            <parameter key="DtAllParticles" value="0" comment="Velocity of particles used to calculate DT. 1:All, 0:Only fluid/floating (default=0)" />
+            <parameter key="TimeMax" value="1.0" comment="Time of simulation" units_comment="seconds" />
+            <parameter key="TimeOut" value="1.0" comment="Time out data" units_comment="seconds" />
+            <parameter key="RhopOutMin" value="700" comment="Minimum rhop valid (default=700)" units_comment="kg/m^3" />
+            <parameter key="RhopOutMax" value="1300" comment="Maximum rhop valid (default=1300)" units_comment="kg/m^3" />
+            <parameter key="PartsOutMax" value="1" comment="%%/100 of fluid particles allowed to be excluded from domain (default=1)" units_comment="decimal" />
+            <simulationdomain comment="Defines domain of simulation (default=Uses minimun and maximum position of the generated particles)">
+                <posmin x="default" y="default" z="default" comment="e.g.: x=0.5, y=default-1, z=default-10%" />
+                <posmax x="default" y="default" z="default+50%" />
+            </simulationdomain>
+        </parameters>
+    </execution>
+</case>
