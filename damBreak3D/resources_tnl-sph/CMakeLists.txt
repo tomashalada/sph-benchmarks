@@ -45,7 +45,12 @@ if( CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR
 endif()
 
 # Set the project's include path
-include_directories(/home/tomas/Work/sph-projects/tnl-sph/include)
+if(DEFINED ENV{tnlsphdir})
+    include_directories($ENV{tnlsphdir}/include)
+else()
+    message(FATAL_ERROR "Environment variable tnlsphdir is not set")
+endif()
+
 
 # Set the install path for Python modules
 # FIXME: for some reason relying on find_package from libs/pytnl fails (dependent target 'Python3::Module' is not defined)
