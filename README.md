@@ -2,9 +2,9 @@
 
 Benchmarks of several particle codes which provide GPU implementation of Smoothed Particle Hydrodynamics. The comparions includes:
 
-- [TNL-SPH](https://gitlab.com/tnl-project/tnl-sph) which is SPH solver developed under the [TNL library](https://tnl-project.org/)
-- [DualSPHysic](https://dual.sphysics.org/)
-- [OpenFPM](http://openfpm.mpi-cbg.de/) which is a library for parallel particle simulations
+- [TNL-SPH](https://gitlab.com/tnl-project/tnl-sph) solver developed under the [TNL library](https://tnl-project.org/)
+- [DualSPHysics](https://dual.sphysics.org/)
+- [OpenFPM](http://openfpm.mpi-cbg.de/) library for parallel particle simulations providing SPH examples
 
 Comparison is done using δ-WCSPH scheme considering following examples:
 
