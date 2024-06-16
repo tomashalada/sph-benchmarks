@@ -4,6 +4,7 @@
 benchmarkName="dambreak3D"
 samples=1
 #resolutions="0.02 0.015 0.013 0.012 0.011 0.009 0.0095 0.0085 0.008 0.0075 0.007 0.0065 0.006"
+resolutions="0.02"
 
 
 ## results folder
