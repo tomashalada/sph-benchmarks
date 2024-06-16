@@ -1,6 +1,26 @@
 # 🌊 Benchmark of several GPU implementations of SPH method
 
+Benchmarks of several particle codes which provide GPU implementation of Smoothed Particle Hydrodynamics. The comparions includes:
+
+- [TNL-SPH](https://gitlab.com/tnl-project/tnl-sph) which is SPH solver developed under the [TNL library](https://tnl-project.org/)
+- [DualSPHysic](https://dual.sphysics.org/)
+- [OpenFPM](http://openfpm.mpi-cbg.de/) which is a library for parallel particle simulations
+
+Comparison is done using δ-WCSPH scheme considering following examples:
+
+- [3D dam break (SPHERIC test 2)](https://www.spheric-sph.org/tests/test-02) using DBC + Verlet time integration
+
+
 ### Run the benchmarks:
+
+To run prepared benchmarks, `run.sh` script needs to be properly setup in order to provide links on
+all tested solvers.
+
+- For TNL-SPH, path `TNL_SPH_PATH` to `tnl-sph` directory needs to be specified
+- For DualSPHysics, path `DUALSPHYSICS_PATH` to dualsphysics executables and related libraries needs to be specified
+- For OpenFPM, path `OPENFPM_PATH` to OpenFPM installation and related dependencies needs to be specified together with the files `common.mk` and `examples.mk` included by `Makefile`
+
+Solver included in the benchmark are specified as a flags passed to particular benchmark problem:
 
 ```bash
 
