@@ -48,7 +48,7 @@ for resolution in ${resolutions}; do
       if [[ $* == *--openfpm* ]]; then
          echo "Running OpenFPM solver with resolution ${resolution}."
          cd resources_openfpm-gpu-opt
-         python3 ./setup_and_run.py
+         python3 ./setup_and_run.py -resolution=${resolution}
          ./run.sh
          cd ..
          mv resources_openfpm-gpu-opt/timers.json ${resultsFolder}/open-fpm_${resolution}_${sample}.out
