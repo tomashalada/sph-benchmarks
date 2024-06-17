@@ -19,7 +19,7 @@ for resolution in ${resolutions}; do
       if [[ $* == *--tnlsph* ]]; then
          echo "Running TNL-SPH solver with resolution ${resolution}."
          cd resources_tnl-sph
-         python3 ./init.py -resolution=${resolution} --generateNewGeometry
+         python3 ./init.py --dp=${resolution} --generate-geometry
          mkdir -p build
          cd build
          cmake ..
