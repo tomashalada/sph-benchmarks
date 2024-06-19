@@ -22,7 +22,7 @@ for resolution in ${resolutions}; do
          python3 ./init.py --dp=${resolution} --generate-geometry
          mkdir -p build
          cd build
-         cmake ..
+         cmake .. -DCMAKE_BUILD_TYPE=Release
          make clean
          make
          cd ..
