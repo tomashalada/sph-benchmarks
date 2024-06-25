@@ -58,6 +58,7 @@ cd damBreak3D
 ```
 
 ### Results
-[NVIDIA A100 (details)](results/results_dambreak3D-NVIDIA-A100/results.md)            |  NVIDIA A40
+
+[NVIDIA A100 (details)](results/results_dambreak3D-NVIDIA-A100/results.md)            |  [NVIDIA A40 (details)](results/results_dambreak3D-NVIDIA-A40/results.md)
 :-------------------------:|:-------------------------:
 ![](./results/results_dambreak3D-NVIDIA-A100/results.png)  |  ![](results/results_dambreak3D-NVIDIA-A40/results.png)
