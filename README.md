@@ -56,3 +56,8 @@ cd damBreak3D
 ./run-benchmark-damBreak3D.sh --tnlsph --dualsphysics --openfpm
 
 ```
+
+### Results
+[NVIDIA A100 (details)](results/results_dambreak3D-NVIDIA-A100/results.md)            |  NVIDIA A40
+:-------------------------:|:-------------------------:
+![](./results/results_dambreak3D-NVIDIA-A100/results.png)  |  ![](results/results_dambreak3D-NVIDIA-A40/results.png)
