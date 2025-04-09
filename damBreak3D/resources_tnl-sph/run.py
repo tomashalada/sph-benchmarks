@@ -17,7 +17,7 @@ def init():
     subprocess.run(args, check=True, cwd=example_dir)
 
 def solve( config_path: Path ):
-    solver_path = bin_dir / f"damBreak3D_WCSPH-DBC_cuda"
+    solver_path = bin_dir / f"damBreak3D_WCSPH-DBC_benchmark"
 
     args = []
     args += [

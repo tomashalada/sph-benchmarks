@@ -66,7 +66,7 @@ def compute_domain_size( setup ):
 
     # Resize domain by one layer of cells
     eps = 1.005
-    eps_sloshing = 1.2
+    eps_sloshing = 1.5
     domain_origin_x = eps * ( setup[ "domain_origin_x" ] - search_radius )
     domain_origin_y = eps * ( setup[ "domain_origin_y" ] - search_radius )
     domain_origin_z = eps * ( setup[ "domain_origin_z" ] - search_radius )

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.26)
 
 # Set default CUDA architecture
 if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
@@ -44,18 +44,25 @@ if( CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR
     endif()
 endif()
 
-# Set the project's include path
-if(DEFINED ENV{tnlsphdir})
-    include_directories($ENV{tnlsphdir}/include)
-else()
-    message(FATAL_ERROR "Environment variable tnlsphdir is not set")
-endif()
-
+## Find or fetch dependencies
+include(FetchContent)
+FetchContent_Declare(TNL
+    GIT_REPOSITORY https://gitlab.com/tnl-project/tnl.git
+    GIT_TAG TH/particles
+    EXCLUDE_FROM_ALL
+)
+set(TNL_EXPORT_INTERFACE_TARGETS ON)  # needed for adding to the interface target
+FetchContent_Declare(TNL_SPH
+    GIT_REPOSITORY https://gitlab.com/tnl-project/tnl-sph
+    GIT_TAG main
+    EXCLUDE_FROM_ALL
+)
+FetchContent_MakeAvailable(TNL TNL_SPH)
+FetchContent_MakeAvailable(TNL)
 
 # Set the install path for Python modules
 # FIXME: for some reason relying on find_package from libs/pytnl fails (dependent target 'Python3::Module' is not defined)
 find_package(Python 3 COMPONENTS Interpreter Development REQUIRED)
-
 # TODO:
 # Require python vtk
 
@@ -65,19 +72,17 @@ find_package(TNL REQUIRED)
 find_package(TBB REQUIRED COMPONENTS tbb)
 
 # compile the benchmark target
-add_executable(damBreak3D_WCSPH-DBC_cuda damBreak3D_WCSPH-DBC.cu)
-
+add_executable(damBreak3D_WCSPH-DBC_benchmark damBreak3D_WCSPH-DBC.cu)
+# include TNL-SPH
+target_include_directories(damBreak3D_WCSPH-DBC_benchmark PUBLIC ${FETCHCONTENT_BASE_DIR}/tnl_sph-src/include)
 # add TNL to all targets
-target_link_libraries(damBreak3D_WCSPH-DBC_cuda PUBLIC TNL::TNL_CUDA tbb)
+target_link_libraries(damBreak3D_WCSPH-DBC_benchmark PUBLIC TNL::TNL)
 
 set(TARGETS
-        damBreak3D_WCSPH-DBC_cuda
+        damBreak3D_WCSPH-DBC_benchmark
 )
 
 foreach(target IN ITEMS ${TARGETS})
-    # add special flags
-    target_compile_definitions(${target} PUBLIC "-DHAVE_CUDA")
-
     # enable OpenMP for the target
    find_package(OpenMP COMPONENTS CXX)
    if(OPENMP_FOUND)
