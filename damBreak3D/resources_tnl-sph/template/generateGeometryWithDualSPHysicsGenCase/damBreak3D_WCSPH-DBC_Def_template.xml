@@ -17,7 +17,7 @@
         <geometry>
             <definition dp="resolutionPlaceholder" units_comment="metres (m)">
                 <pointmin x="-1" y="-1" z="-1" />
-                <pointmax x="3.3" y="1.1" z="1.1" />
+                <pointmax x="3.3" y="1.1" z="2.1" />
             </definition>
             <commands>
                 <list name="GeometryForNormals">
@@ -27,30 +27,37 @@
                     <setnormalinvert invert="true" />
 					<!-- Left side of the tank -->
                     <drawbox>
-                        <boxfill>all^top^right</boxfill>
+                        <boxfill>all^right</boxfill>
                         <point x="#Tankpx1" y="#Tankpy1" z="#Tankpz1" />
                         <endpoint x="#Boxpx1-Dpm" y="#Tankpy2" z="#Tankpz2" />
                         <layers vdp="-0.5" />
                     </drawbox>
 					<!-- Right side of the tank -->
                     <drawbox>
-                        <boxfill>all^top^left</boxfill>
+                        <boxfill>all^left</boxfill>
                         <point x="#Boxpx2+Dpm" y="#Tankpy1" z="#Tankpz1" />
                         <endpoint x="#Tankpx2" y="#Tankpy2" z="#Tankpz2" />
                         <layers vdp="-0.5" />
                     </drawbox>
 					<!-- Front-central side of the tank -->
                     <drawbox>
-                        <boxfill>front|bottom</boxfill>
+                        <boxfill>front|bottom|top</boxfill>
                         <point x="#Boxpx1-Dpm" y="#Tankpy1" z="#Tankpz1" />
                         <endpoint x="#Boxpx2+Dpm" y="#Boxpy1-Dpm" z="#Tankpz2" />
                         <layers vdp="-0.5" />
                     </drawbox>
 					<!-- Back-central side of the tank -->
                     <drawbox>
-                        <boxfill>back|bottom</boxfill>
+                        <boxfill>back|bottom|top</boxfill>
                         <point x="#Boxpx1-Dpm" y="#Boxpy2+Dpm" z="#Tankpz1" />
                         <endpoint x="#Boxpx2+Dpm" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="-0.5" />
+                    </drawbox>
+               <!-- Close box above obstacle -->
+                    <drawbox>
+                        <boxfill>top</boxfill>
+                        <point x="#Boxpx1" y="#Boxpy1" z="#Tankpz1" />
+                        <endpoint x="#Boxpx2" y="#Boxpy2" z="#Tankpz2" />
                         <layers vdp="-0.5" />
                     </drawbox>
 					<!-- Central obstacle -->
@@ -69,7 +76,7 @@
                     <!-- Defines actual dimensions of tank -->
                     <newvarcte Dpm="Dp/2" />
                     <newvarcte DefTankpx="0" DefTankpy="0" DefTankpz="0" />
-                    <newvarcte DefTanksx="3.220" DefTanksy="1.0" DefTanksz="1.0" />
+                    <newvarcte DefTanksx="3.220" DefTanksy="1.0" DefTanksz="2.0" />
                     <newvarcte DefBoxpx="0.660" DefBoxpy="0.300" />
                     <newvarcte DefBoxsx="0.160" DefBoxsy="0.400" DefBoxsz="0.160" />
                     <!-- Defines dimensions and positions according to pointmin and dp -->
@@ -86,30 +93,37 @@
                     <setmkbound mk="0" />
 					<!-- Left side of the tank -->
                     <drawbox>
-                        <boxfill>all^top^right</boxfill>
+                        <boxfill>all^right</boxfill>
                         <point x="#Tankpx1" y="#Tankpy1" z="#Tankpz1" />
                         <endpoint x="#Boxpx1" y="#Tankpy2" z="#Tankpz2" />
                         <layers vdp="0,1,2" />
                     </drawbox>
 					<!-- Right side of the tank -->
                     <drawbox>
-                        <boxfill>all^top^left</boxfill>
+                        <boxfill>all^left</boxfill>
                         <point x="#Boxpx2" y="#Tankpy1" z="#Tankpz1" />
                         <endpoint x="#Tankpx2" y="#Tankpy2" z="#Tankpz2" />
                         <layers vdp="0,1,2" />
                     </drawbox>
 					<!-- Front-central side of the tank -->
                     <drawbox>
-                        <boxfill>front|bottom</boxfill>
+                        <boxfill>front|bottom|top</boxfill>
                         <point x="#Boxpx1" y="#Tankpy1" z="#Tankpz1" />
                         <endpoint x="#Boxpx2" y="#Boxpy1" z="#Tankpz2" />
                         <layers vdp="0,1,2" />
                     </drawbox>
 					<!-- Back-central side of the tank -->
                     <drawbox>
-                        <boxfill>back|bottom</boxfill>
+                        <boxfill>back|bottom|top</boxfill>
                         <point x="#Boxpx1" y="#Boxpy2" z="#Tankpz1" />
                         <endpoint x="#Boxpx2" y="#Tankpy2" z="#Tankpz2" />
+                        <layers vdp="0,1,2" />
+                    </drawbox>
+               <!-- Close box above obstacle -->
+                    <drawbox>
+                        <boxfill>top</boxfill>
+                        <point x="#Boxpx1" y="#Boxpy1" z="#Tankpz1" />
+                        <endpoint x="#Boxpx2" y="#Boxpy2" z="#Tankpz2" />
                         <layers vdp="0,1,2" />
                     </drawbox>
 					<!-- Central obstacle -->
