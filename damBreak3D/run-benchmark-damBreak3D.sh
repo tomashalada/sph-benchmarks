@@ -19,13 +19,13 @@ for resolution in ${resolutions}; do
       if [[ $* == *--tnlsph* ]]; then
          echo "Running TNL-SPH solver with resolution ${resolution}."
          cd resources_tnl-sph
-         python3 ./init.py --dp=${resolution} --generate-geometry
          mkdir -p build
          cd build
          cmake .. -DCMAKE_BUILD_TYPE=Release
          make clean
          make
          cd ..
+         python3 ./init.py --dp=${resolution} --generate-geometry
          python3 ./run.py
          cd ..
          mv resources_tnl-sph/results/time_measurements.json ${resultsFolder}/tnl-sph_${resolution}_${sample}.json
