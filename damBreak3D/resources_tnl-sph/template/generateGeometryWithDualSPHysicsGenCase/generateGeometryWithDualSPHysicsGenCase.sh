@@ -14,7 +14,7 @@ export dirout=${name}_out
 export diroutdata=${dirout}/data
 
 #Load the path for DualSPHysics GenCase
-export dirbin=${tnlsphdir}/src/tools/3rdparty
+export dirbin=../../build/_deps/tnl_sph-src/src/tools/3rdparty
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${dirbin}
 export gencase="${dirbin}/GenCase_linux64"
 
