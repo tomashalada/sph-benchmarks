@@ -21,7 +21,6 @@ for resolution in ${resolutions}; do
          cd resources_tnl-sph
          cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
          cmake --build build --target damBreak3D_WCSPH-DBC_benchmark
-         cd ..
          python3 ./init.py --dp=${resolution} --generate-geometry
          python3 ./run.py
          cd ..
