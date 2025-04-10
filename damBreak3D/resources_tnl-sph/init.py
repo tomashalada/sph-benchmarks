@@ -4,7 +4,7 @@ import numpy as np
 import sys
 import os
 import subprocess
-sys.path.append( os.environ[ "tnlsphdir" ] + '/src/tools' )
+sys.path.append( 'build/_deps/tnl_sph-src/src/tools' )
 import saveParticlesVTK
 import vtk
 from vtk.numpy_interface import dataset_adapter as dsa
