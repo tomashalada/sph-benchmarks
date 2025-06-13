@@ -45,8 +45,8 @@ def process_dam_break_boundary_particles( setup ):
 
     box_n = len( np_points_box )
     box_r = np.array( np_points_box, dtype=float ) #!!
-    box_v = np.array( dsa.WrapDataObject( polydata ).PointData[ 'Vel' ], dtype=float )
-    box_rho = np.array( dsa.WrapDataObject( polydata ).PointData[ 'Rhop' ] )
+    box_v = np.zeros( ( box_n, 3 ) )
+    box_rho = setup[ 'density' ] * np.ones( box_n )
     box_p = np.zeros( box_n )
     box_ptype = np.zeros( box_n )
 

@@ -60,16 +60,37 @@ FetchContent_Declare(TNL_SPH
 FetchContent_MakeAvailable(TNL TNL_SPH)
 FetchContent_MakeAvailable(TNL)
 
-# Set the install path for Python modules
-# FIXME: for some reason relying on find_package from libs/pytnl fails (dependent target 'Python3::Module' is not defined)
-find_package(Python 3 COMPONENTS Interpreter Development REQUIRED)
-# TODO:
-# Require python vtk
+# TODO: We should require python
+# find_package(Python 3 COMPONENTS Interpreter Development REQUIRED)
+# Require python numpy, vtk
 
-# Add TNL modules
-find_package(TNL REQUIRED)
-# FIXME: There  is some problem with linking
-find_package(TBB REQUIRED COMPONENTS tbb)
+# Download the gencase from DualSPHysics
+option(ENABLE_GENCASE_FOR_BENCHMARKS_DOWNLOAD  "Enable downloading GenCase_linux64" FALSE)
+if(ENABLE_GENCASE_FOR_BENCHMARKS_DOWNLOAD )
+   set(DOWNLOAD_URL "https://github.com/DualSPHysics/DualSPHysics/raw/master/bin/linux/GenCase_linux64")
+   set(DESTINATION_DIR "${CMAKE_SOURCE_DIR}/build/_deps/tnl_sph-src/src/tools/3rdparty")
+   set(DESTINATION_FILE "${DESTINATION_DIR}/GenCase_linux64")
+
+   # Create the destination directory if it doesn't exist
+   file(MAKE_DIRECTORY ${DESTINATION_DIR})
+
+   # Check if the file already exists
+   if(NOT EXISTS "${DESTINATION_FILE}")
+       # Download the file during the configuration phase
+       file(DOWNLOAD
+           ${DOWNLOAD_URL}
+           ${DESTINATION_FILE}
+           SHOW_PROGRESS
+           STATUS DOWNLOAD_STATUS
+       )
+       # Set executable permissions for the downloaded file
+       file(CHMOD ${DESTINATION_FILE} PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
+   else()
+       message(STATUS "GenCase_linux64 already exists at ${DESTINATION_FILE}, skipping download")
+   endif()
+else()
+    message(STATUS "GenCase download is disabled (ENABLE_GENCASE_FOR_BENCHMARKS_DOWNLOAD  is FALSE)")
+endif()
 
 # compile the benchmark target
 add_executable(damBreak3D_WCSPH-DBC_benchmark damBreak3D_WCSPH-DBC.cu)

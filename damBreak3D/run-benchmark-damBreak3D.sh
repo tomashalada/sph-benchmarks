@@ -19,7 +19,7 @@ for resolution in ${resolutions}; do
       if [[ $* == *--tnlsph* ]]; then
          echo "Running TNL-SPH solver with resolution ${resolution}."
          cd resources_tnl-sph
-         cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+         cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -DENABLE_GENCASE_FOR_BENCHMARKS_DOWNLOAD=True
          cmake --build build --target damBreak3D_WCSPH-DBC_benchmark
          python3 ./init.py --dp=${resolution} --generate-geometry
          python3 ./run.py
