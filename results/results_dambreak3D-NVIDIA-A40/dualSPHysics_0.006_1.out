@@ -1,0 +1,261 @@
+
+
+ <DUALSPHYSICS5> Copyright (c) 2023 by
+ Dr Jose M. Dominguez Alonso, Dr Alejandro Crespo,
+ Prof. Moncho Gomez Gesteira, Prof. Benedict Rogers,
+ Dr Georgios Fourtakas, Prof. Peter Stansby,
+ Dr Renato Vacondio, Dr Corrado Altomare, Dr Angelo Tafuni,
+ Dr Orlando Garcia Feal, Ivan Martinez Estevez,
+ Dr Joseph O'Connor, Dr Aaron English
+
+ EPHYSLAB Environmental Physics Laboratory, Universidade de Vigo
+ School of Mechanical, Aerospace and Civil Engineering, University of Manchester
+
+ DualSPHysics is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License
+ as published by the Free Software Foundation, either version 2.1 of
+ the License, or (at your option) any later version.
+
+ DualSPHysics is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DualSPHysics. If not, see <http://www.gnu.org/licenses/>.
+
+ Free download source files and documentation from DualSPHysics website (http://dual.sphysics.org).
+ Full list of developers and contributors is available at https://dual.sphysics.org/developers
+ Properly cite the use of DualSPHysics (Dominguez et al., 2022) (https://dual.sphysics.org/references).
+
+
+DualSPHysics5 v5.2.269 (03-04-2023)
+====================================
+[CUDA Capable device(s)]
+  Detected 1 CUDA Capable device(s)
+  CUDA Driver Version / Runtime Version: 12.4 / 11.7
+ 
+Device 0: "NVIDIA A40"
+  CUDA Capability Major....: 8.6
+  Global memory............: 45403 MBytes
+  CUDA Cores...............: 10752 (84 Multiprocessors, 128 CUDA Cores/MP)
+  GPU Max Clock rate.......: 1740 MHz (1.74 GHz)
+  Memory Clock rate........: 7251 Mhz
+  Memory Bus Width.........: 384-bit
+  L2 Cache Size............: 6144 KBytes
+  Constant memory..........: 64 KBytes
+  Shared memory per block..: 48 KBytes
+  Registers per block......: 65536
+  Maximum threads per MP...: 1536
+  Maximum threads per block: 1024
+  Concurrent copy and kernel execution....: Yes with 2 copy engine(s)
+  Run time limit on kernels...............: No
+  Integrated GPU sharing Host Memory......: No
+  Support host page-locked memory mapping.: Yes
+  Device has ECC support..................: Enabled
+  Device supports Unified Addressing (UVA): Yes
+  Device PCI (Domain / Bus / location)....: 0 / 225 / 0
+  Device supports P2P and RDMA............: Yes
+  Device supports P2P from/to GPUs........: 
+ 
+[GPU Hardware]
+Device default: 0 "NVIDIA A40"
+Compute capability: 8.6
+Memory global: 45403 MB
+Memory shared: 49152 Bytes
+ 
+[Initialising JSphGpuSingle  24-06-2024 17:50:44]
+ProgramFile=".../bin/linux/DualSPHysics5.2_linux64"
+ExecutionDir=".../sph-benchmarks-test/damBreak3D/resoucres_dualsphysics"
+XmlFile=".../resoucres_dualsphysics/damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.xml"
+OutputDir=".../damBreak3D/resoucres_dualsphysics/damBreak3D_WCSPH-DBC_out"
+OutputDataDir=".../resoucres_dualsphysics/damBreak3D_WCSPH-DBC_out/data"
+XML-App: GenCase v5.0.278 (24-04-2023)
+XML-Vars (uservars + ctes): Boxpx1=[0.662]  Boxpx2=[0.818]  Boxpy1=[0.302]  Boxpy2=[0.698]  Boxpz2=[0.158]  DefBoxpx=[0.66]  DefBoxpy=[0.3]  DefBoxsx=[0.16]  DefBoxsy=[0.4]  DefBoxsz=[0.16]  DefTankpx=[0]  DefTankpy=[0]  DefTankpz=[0]  DefTanksx=[3.22]  DefTanksy=[1]  DefTanksz=[1]  Dpm=[0.003]  MResId=[0]  Tankpx1=[0.002]  Tankpx2=[3.218]  Tankpy1=[0.002]  Tankpy2=[0.998]  Tankpz1=[0.002]  Tankpz2=[0.998]  CaseName=["damBreak3D_WCSPH-DBC"]  Data2D=[0]  Data2DPosy=[0]  H=[0.012]  KernelSize=[0.024]  B=[299345]  Gamma=[7]  Rhop0=[1000]  Dp=[0.006]  Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  MassFluid=[0.000216]  MassBound=[0.000216]
+XML-Vars (parameters): TimeMax=[1]  TimeOut=[1]
+**Basic case configuration is loaded
+**Special case configuration is loaded
+Loading initial state of particles...
+Loaded particles: 4008987
+MapRealPos(border)=(-0.0106,-0.0106,-0.0106)-(3.2306,1.0106,0.9986)
+MapRealPos(final)=(-0.0106,-0.0106,-0.0106)-(3.2306,1.0106,1.5032)
+**Initial state of particles is loaded
+PosCellCode="13_10_9 (8192,1024,512)"
+PosCellSize=0.024000  (1 x KernelSize)
+**3D-Simulation parameters:
+CaseName="damBreak3D_WCSPH-DBC"
+RunName="damBreak3D_WCSPH-DBC"
+Symmetry=False
+SavePosDouble=False
+SvExtraParts=""
+SaveFtAce=False
+SvTimers=True
+Boundary="DBC"
+StepAlgorithm="Verlet"
+  VerletSteps=40
+Kernel="Wendland"
+  Wendland.awen=241770.8
+  Wendland.bwen=-1.007383e+08
+Viscosity="Artificial"
+  Visco=0.02
+  ViscoBoundFactor=0
+DensityDiffusion="Molteni and Colagrossi 2009"
+  DensityDiffusionValue=0.1
+Shifting="None"
+RigidAlgorithm="None"
+FloatingCount=0
+CaseNp=4008987
+CaseNbound=994437
+CaseNfixed=994437
+CaseNmoving=0
+CaseNfloat=0
+CaseNfluid=3014550
+PeriodicActive="None"
+Dp=0.006
+KernelH=0.012000  (CoefficientH=1.1547; H/Dp=2)
+KernelSize=0.024
+CteB=299345.2
+Gamma=7
+RhopZero=1000
+Cs0=45.77571510910561
+CFLnumber=0.2
+DtIni=0.0002621477365390435
+DtMin=1.310738702226746e-05
+DtAllParticles=False
+MassFluid=0.000216
+MassBound=0.000216
+TimeMax=1
+TimePart=1
+Gravity=(0,0,-9.81)
+NpMinimum=994437
+RhopOut=True
+RhopOutMin=700
+RhopOutMax=1300
+WrnPartsOut=True
+CellMode="Full"
+ScellDiv=1
+MapCells=(136,43,64)
+CellDomFixed=False
+**Requested GPU memory for 4009115 particles: 550.6 MB (0 times).
+DomCells=(136,43,64)
+DomCellCode="1+12_9_10"
+ 
+BlockSize calculation mode: Fixed.
+  BsForcesBound=128 (39 regs)
+  BsForcesFluid=128 (48 regs)
+ 
+**CellDiv: Requested gpu memory for 4209564 particles: 32.5 MB.
+**CellDiv: Requested gpu memory for 62920 cells (CellMode=Full): 1.0 MB.
+ 
+RunMode="Pos-Cell - Single-GPU"
+ 
+Particle summary:
+  Fixed....: 994437  id:(0-994436)   MKs:2 (10-11)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 3014550  id:(994437-4008986)   MKs:1 (1)
+
+Total particles: 4008987 (bound=994437 (fx=994437 mv=0 ft=0) fluid=3014550)
+Total MK blocks: 3 (bound=2 (fx=2 mv=0 ft=0) fluid=1)
+ 
+Allocated memory in CPU: 360866430 (344.15 MB)
+Allocated memory in GPU: 612393072 (584.02 MB)
+Part_0000        4008987 particles successfully stored
+
+[Initialising simulation (8a33d19j)  24-06-2024 17:50:45]
+PART       PartTime      TotalSteps    Steps    Time/Sec   Finish time        
+=========  ============  ============  =======  =========  ===================
+  Progress 5.44% in 30.0s. Estimated finish time: 24-06-2024 17:59:56
+  Progress 10.21% in 60.0s. Estimated finish time: 24-06-2024 18:00:32
+**CellDiv: Requested gpu memory for 68200 cells (CellMode=Full): 1.0 MB.
+**CellDiv: Requested gpu memory for 74800 cells (CellMode=Full): 1.1 MB.
+**CellDiv: Requested gpu memory for 81400 cells (CellMode=Full): 1.2 MB.
+**CellDiv: Requested gpu memory for 88000 cells (CellMode=Full): 1.3 MB.
+**CellDiv: Requested gpu memory for 95040 cells (CellMode=Full): 1.5 MB.
+**CellDiv: Requested gpu memory for 103488 cells (CellMode=Full): 1.6 MB.
+  Progress 43.76% in 300.0s. Estimated finish time: 24-06-2024 18:02:10
+**CellDiv: Requested gpu memory for 112332 cells (CellMode=Full): 1.7 MB.
+**CellDiv: Requested gpu memory for 121440 cells (CellMode=Full): 1.9 MB.
+**CellDiv: Requested gpu memory for 134200 cells (CellMode=Full): 2.0 MB.
+**CellDiv: Requested gpu memory for 147312 cells (CellMode=Full): 2.2 MB.
+**CellDiv: Requested gpu memory for 160776 cells (CellMode=Full): 2.5 MB.
+**CellDiv: Requested gpu memory for 175956 cells (CellMode=Full): 2.7 MB.
+**CellDiv: Requested gpu memory for 190212 cells (CellMode=Full): 2.9 MB.
+**CellDiv: Requested gpu memory for 204820 cells (CellMode=Full): 3.1 MB.
+**CellDiv: Requested gpu memory for 221408 cells (CellMode=Full): 3.4 MB.
+**CellDiv: Requested gpu memory for 235092 cells (CellMode=Full): 3.6 MB.
+**CellDiv: Requested gpu memory for 253176 cells (CellMode=Full): 3.9 MB.
+**CellDiv: Requested gpu memory for 271260 cells (CellMode=Full): 4.1 MB.
+**CellDiv: Requested gpu memory for 289344 cells (CellMode=Full): 4.4 MB.
+  Progress 72.26% in 600.0s. Estimated finish time: 24-06-2024 18:04:35
+**CellDiv: Requested gpu memory for 307428 cells (CellMode=Full): 4.7 MB.
+**CellDiv: Requested gpu memory for 325512 cells (CellMode=Full): 5.0 MB.
+**CellDiv: Requested gpu memory for 343596 cells (CellMode=Full): 5.2 MB.
+**CellDiv: Requested gpu memory for 361680 cells (CellMode=Full): 5.5 MB.
+Part_0001      1.000028         30492    30492     875.46  24-06-2024 18:05:20
+
+[Simulation finished  24-06-2024 18:05:20]
+Particles of simulation (initial): 4008987
+DTs adjusted to DtMin............: 0
+Excluded particles...............: 0
+Total Runtime....................: 876.106445 sec.
+Simulation Runtime...............: 875.487000 sec.
+Runtime per physical second......: 875.462891 sec.
+Steps per second.................: 34.828617
+Steps of simulation..............: 30492
+PART files.......................: 2
+Maximum number of particles......: 4008987
+Maximum number of cells..........: 345032
+CPU Memory.......................: 360866430 (344.15 MB)
+GPU Memory.......................: 617173232 (588.58 MB)
+ 
+[GPU Timers]
+VA-Init..........................: 0.619462 sec.
+NL-Limits........................: 38.672509 sec.
+NL-PreSort.......................: 0.084357 sec.
+NL-RadixSort.....................: 26.454348 sec.
+NL-CellBegin.....................: 1.853351 sec.
+NL-SortData......................: 0.263446 sec.
+NL-OutCheck......................: 53.173359 sec.
+CF-PreForces.....................: 10.104687 sec.
+CF-Forces........................: 744.132849 sec.
+SU-Shifting......................: 0 sec.
+SU-ComputeStep...................: 0.199279 sec.
+SU-Floating......................: 0 sec.
+SU-Motion........................: 0 sec.
+SU-Periodic......................: 0 sec.
+SU-ResizeNp......................: 0 sec.
+SU-DownData......................: 0.025565 sec.
+SU-SavePart......................: 0.411343 sec.
+SU-Chrono........................: 0 sec.
+SU-Moorings......................: 0 sec.
+SU-InOut.........................: 0 sec.
+SU-Gauges........................: 0.000001 sec.
+ 
+[Output files]
+- CfgInit_Domain.vtk...: Saves the limits of the case and the simulation domain limits.
+- CfgInit_MapCells.vtk.: Saves the cell division of the simulation domain.
+- Run.csv..............: One line CSV file with execution parameters and other simulation data.
+- Run.out..............: Log file of the simulation.
+- data/PartInfo.ibi4...: Binary file with execution information for each instant (input for PartInfo program).
+- data/PartOut_???.obi4: Binary file with particles excluded during simulation (input for PartVtkOut program).
+- data/Part_????.bi4...: Binary file with particle data in different instants.
+- data/Part_Head.ibi4..: Binary file with basic information of simulation data.
+ 
+[References]
+- Official solver reference DualSPHysics v5.0: J.M. Dominguez, G. Fourtakas,
+    C. Altomare, R.B. Canelas, A. Tafuni, O. Garcia-Feal, I. Martinez-Estevez,
+    A. Mokos, R. Vacondio, A.J.C. Crespo, B.D. Rogers, P.K. Stansby, M. Gomez-Gesteira.
+    2022. DualSPHysics: from fluid dynamics to multiphysics problems.
+    Computational Particle Mechanics, 9:867-895. doi: https://doi.org/10.1007/s40571-021-00404-2
+
+- Optimised CPU multi-core and GPU implementation (Dominguez et al., 2013  https://doi.org/10.1016/j.cpc.2012.10.015)
+- Dynamic boundary conditions (Crespo et al., 2007  https://doi.org/10.3970/cmc.2007.005.173)
+- Density diffusion Term: Molteni (Molteni and Colagrossi, 2009  https://doi.org/10.1016/j.cpc.2008.12.004)
+- Viscosity: Artificial (Monaghan, 1992  https://doi.org/10.1146/annurev.aa.30.090192.002551)
+- Viscosity: ViscoBoundFactor coefficient (Barreiro et al., 2014  https://doi.org/10.1371/journal.pone.0111031)
+- Kernel: Quintic Wendland (Wendland, 1995  https://doi.org/10.1007/BF02123482)
+- Time integration scheme: Verlet (Verlet, 1967  https://doi.org/10.1103/PhysRev.159.98)
+
+Finished execution (code=0).
+
