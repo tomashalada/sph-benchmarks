@@ -1,0 +1,1753 @@
+Running TNL-SPH solver with resolution 0.008.
+-- The CXX compiler identification is GNU 12.2.0
+-- The CUDA compiler identification is NVIDIA 12.6.68 with host compiler GNU 12.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /cvmfs/software.metacentrum.cz/spack18/software/linux-debian11-x86_64_v2/gcc-10.2.1/cuda-12.6.1-hplxoqpnmn7k5zolkvqlaxndmpd5s3ft/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- The C compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for C++ include filesystem
+-- Looking for C++ include filesystem - found
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5") found components: CXX
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1")
+-- Found MPI: TRUE (found version "3.1") found components: CXX
+-- Looking for a HIP compiler
+-- Looking for a HIP compiler - NOTFOUND
+-- Trying to find DCMTK expecting DCMTKConfig.cmake
+-- Trying to find DCMTK expecting DCMTKConfig.cmake - failed
+-- Trying to find DCMTK relying on FindDCMTK.cmake
+-- Please set DCMTK_DIR and re-run configure (missing: DCMTK_config_INCLUDE_DIR DCMTK_dcmdata_INCLUDE_DIR DCMTK_dcmimage_INCLUDE_DIR DCMTK_dcmimgle_INCLUDE_DIR DCMTK_dcmjpeg_INCLUDE_DIR DCMTK_dcmjpls_INCLUDE_DIR DCMTK_dcmnet_INCLUDE_DIR DCMTK_dcmpstat_INCLUDE_DIR DCMTK_dcmqrdb_INCLUDE_DIR DCMTK_dcmsign_INCLUDE_DIR DCMTK_dcmsr_INCLUDE_DIR DCMTK_dcmtls_INCLUDE_DIR DCMTK_ofstd_INCLUDE_DIR DCMTK_oflog_INCLUDE_DIR DCMTK_LIBRARIES) 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.13")
+-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.39")
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "62")
+-- Found Python: /usr/bin/python3.11 (found suitable version "3.11.2", minimum required is "3") found components: Interpreter
+-- Found CUDAToolkit: /cvmfs/software.metacentrum.cz/spack18/software/linux-debian11-x86_64_v2/gcc-10.2.1/cuda-12.6.1-hplxoqpnmn7k5zolkvqlaxndmpd5s3ft/targets/x86_64-linux/include (found version "12.6.68")
+-- Gunrock not found.
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /storage/brno2/home/haladto1/openfpm_cuda12-4/dependencies/OPENBLAS/lib/libopenblas.so
+-- Compiling without Tensor Core support.
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- GenCase download is disabled (ENABLE_GENCASE_DOWNLOAD is FALSE)
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 25% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 67% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 89% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- Configuring done (124.9s)
+-- Generating done (154.1s)
+-- Build files have been written to: /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build
+Building CUDA object CMakeFiles/damBreak3D_WCSPH-DBC_benchmark.dir/damBreak3D_WCSPH-DBC.cu.o
+Linking CUDA executable damBreak3D_WCSPH-DBC_benchmark
+Built target damBreak3D_WCSPH-DBC_benchmark
+Initial particle spacing: 0.008
+
+
+ <GENCASE>  Copyright (c) 2025 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ GenCase is a free tool for DualSPHysics simulations.
+ DualSPHysics project is an international collaboration between
+ University of Vigo (Spain) and University of Manchester (UK).
+
+ Redistribution and use in binary form, without modification, are
+ permitted provided that the following conditions are met:
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Redistributions or modifications of source code are not permitted 
+   unless expressly authorised, and must retain the above copyright 
+   notice, this list of conditions and the following disclaimer.
+ * Neither the name of the GenCase nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+GenCase v5.4.354.01 (07-04-2025)
+=================================
+OmpThreads: 1
+
+[LoadXMLInit]
+List: GeometryForNormals
+List: MAIN
+
+Total operations: 38
+[LoadXMLInit-End  time:0.019s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  VResId=[0]  Dp=[0.008]  PosMin_x=[-1]  PosMin_y=[-1]  PosMin_z=[-1]  PosMax_x=[3.3]  PosMax_y=[1.1]  PosMax_z=[2.1]  CaseName=["damBreak3D_WCSPH-DBC"]  Data2D=[0]  Data2DPosy=[0]  H=[0.016]  MassBound=[0.000512]  MassFluid=[0.000512]
+
+Mk size: 1 bytes
+Case limits: (-1,-1,-1) - (3.3,1.1,2.1)
+Distance between points (Dp): 0.008
+Case domain: (0,0,0)-(536,261,386)
+Domain points: 537 x 262 x 387 = 54,448,578
+Case parts: 1 x 387z
+Memory: 0.05 GiB  51.93 MiB  (54,448,578)
+
+> MAIN
+>> GeometryForNormals
+FileShapes> hdp_Actual.vtk  shapes:22  points:44   (time:0.019s)
+<< GeometryForNormals (8+6+1)
+FileDbgDomains> damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_dbg-fillbox.vtk  domains:1
+FileShapes> _Actual.vtk  shapes:66  points:132   (time:0.008s)
+<MAIN (Operations= 25+13+2 = 40)
+
+Triangles: 176 (0 ignored)
+[Draw-End  time:0.147s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.004s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:1.064s)
+BitSizeTot: 27 (2 + 9+8+8)
+Points loaded: 2,411,064
+Sorting points by Z...
+Sorting points by Mk...
+Computing Grid-points...  (time:0.396s)
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10): 1109835  -->  1109835
+  block[  1] (mk: 11):  11133  -->   11133
+Points -> Fluid particles:
+  block[  2] (mk:  1): 1290096  -->  1290096
+
+Particle summary:
+  Fixed....: 1,120,968  id:(0-1120967)   MKs:2 (10-11)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 1,290,096  id:(1120968-2411063)   MKs:1 (1)
+
+Total particles: 2,411,064 (bound=1120968 (fx=1120968 mv=0 ft=0) fluid=1290096)
+Total MK blocks: 3 (bound=2 (fx=2 mv=0 ft=0) fluid=1)
+
+Maximum depth: 0.536 (automatic)
+Speed of system: 2.29307 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 45.8614 max(45.8614,22.9307)
+Speed of sound: 45.8614 (automatic)
+
+Coefh:1.154701 (hdp:2.000000)
+
+[PreparePoints-End  time:1.481s]
+
+[SaveCase3D]
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_MkCells.vtk  (time:0.008s, shapes:42, points:168)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.bi4<double>  (time:1.004s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Bound.vtk  (time: 0.304s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Fluid.vtk  (time: 0.540s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.xml  (time:0.014s)
+ 
+Computing normals...
+
+*** WARNING: Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+  Evaluating 1,120,968 particles with 22 shapes (distance 2x H = 0.032).
+  Time for computing 1,190,113 normals: 0.304s   Max.Memory: 42.67 MiB
+  Non-zero particle normals: 1,120,968/1,120,968    Normals size range: (0.004000 - 0.034641).
+  Final zero normals: 0/1,120,968 (0.0%)   Maximum normal: 0.034641 (2.17 x h)
+
+Save files time: 3.952s
+
+Particle limits:
+  X range: -0.016 to 3.24 [m]
+  Y range: -0.016 to 1.016 [m]
+  Z range: -0.016 to 2.016 [m]
+
+[SaveCase3D-End  time:4.052s]
+
+[WARNINGS]
+1. Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+Time of execution: 5.771 sec. (1 threads)
+
+Finished execution (code=0).
+
+Geometry for resolutin with initial particle spacing 0.008 was successfuly generated.
+{'dp': 0.008, 'h_coef': 2, 'density': 1000, 'speed_of_sound': 45.17, 'cfl': 0.15, 'particle_mass': 0.0005120000000000001, 'smoothing_length': 0.016, 'search_radius': 0.032, 'time_step': 5.3132610139473096e-05, 'fluid_n': 1290096, 'boundary_n': 1120968, 'domain_origin_x': -0.04824000076375901, 'domain_origin_y': -0.04824000076375901, 'domain_origin_z': -0.04824000076375901, 'domain_end_x': 3.24, 'domain_end_y': 1.016, 'domain_end_z': 2.016, 'domain_size_x': 3.3366000103481857, 'domain_size_y': 1.1014800333508104, 'domain_size_z': 3.1202400494011493}
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation initialization.                                 |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Reading fluid particles:                                               sources/dambreak_fluid.vtk |
+| Reading boundary particles:                                         sources/dambreak_boundary.vtk |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                              SPH simulation successfully initialized.                            |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation configuration.                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Case name:                                                                   damBreak3D_WCSPH-DBC |
++--------------------------------------------------------------------------------------------------+
+| MPI processes:                                                                                  1 |
+| Device type:                                                                    TNL::Devices::GPU |
+| Particle system type:                                    TNL::ParticleSystem::ParticlesLinkedList |
+| SPH model:                                                                    TNL::SPH::WCSPH_DBC |
+| Verbose:                                                                            with-snapshot |
+| Output directory:                                                                         results |
+| Particles format                                                                             auto |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                         TNL::SPH::WCSPH_DBC (delta-WCSPH) model parameters                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Resolution parameters                                                                             |
+|  Initial particle distance (dp):                                                            0.008 |
+|  Smoothing length (h):                                                                      0.016 |
+|  Spatial resolution (h/dp):                                                                     2 |
+|  Particle mass (mass):                                                                   0.000512 |
+| Model parameters                                                                                  |
+|  Diffusive term:                                                   TNL::SPH::MolteniDiffusiveTerm |
+|  Diffusive term coefficient (delta):                                                          0.1 |
+|  Viscous term:                                                      TNL::SPH::ArtificialViscosity |
+|  Artificial vicosity coefficient (alpha):                                                    0.02 |
+|  Equation of state:                                           TNL::SPH::TaitWeaklyCompressibleEOS |
+| Coefficient of EOS (coefB):                                                                291476 |
+|  Speed of sound (speedOfSound):                                                             45.17 |
+|  Referentail density (rho0):                                                                 1000 |
+| Boundary condition type                                                  TNL::SPH::WCSPH_DBC::DBC |
+| Time integration                                                                                  |
+|  Integration scheme:                                            TNL::SPH::WCSPH_DBC::VerletScheme |
+|  Time stepping:                                                        TNL::SPH::ConstantTimeStep |
+|  Initial time step (dtInit):                                                            5.313e-05 |
+| External bulk force:                                                              [ 0, 0, -9.81 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                     Fluid object information.                                    |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1290096 |
+| Number of allocated particles:                                                            1290096 |
+| Search radius:                                                                              0.032 |
+| Grid origin:                                                     [ -0.04824, -0.04824, -0.04824 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.04824, -0.04824, -0.04824 ] |
+| Grid dimensions:                                                                 [ 106, 36, 100 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.04824, -0.04824, -0.04824 ] |
+| Grid dimension with overlap:                                                     [ 106, 36, 100 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                    Boundary object information:                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1120968 |
+| Number of allocated particles:                                                            1120968 |
+| Search radius:                                                                              0.032 |
+| Grid origin:                                                     [ -0.04824, -0.04824, -0.04824 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.04824, -0.04824, -0.04824 ] |
+| Grid dimensions:                                                                 [ 106, 36, 100 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.04824, -0.04824, -0.04824 ] |
+| Grid dimension with overlap:                                                     [ 106, 36, 100 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                        System information.                                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Host name:                                                                      konos3.fav.zcu.cz |
+| System:                                                                                     Linux |
+| Release:                                                                           6.1.0-41-amd64 |
+| Architecture:                                                                               AMD64 |
+| TNL compiler:                                                               Nvidia NVCC (12.6.68) |
+| CPU info                                                                                          |
+|  Model name:                                            Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz |
+|  Cores:                                                                                        10 |
+|  Threads per core:                                                                              2 |
+|  Max clock rate (in MHz):                                                                    3100 |
+|  Cache (L1d, L1i, L2, L3):                                                     32, 32, 256, 25600 |
+| GPU info                                                                                          |
+|  Name                                                                  NVIDIA GeForce GTX 1080 Ti |
+|  Architecture                                                                                 6.1 |
+|  GPU cores                                                                                   3584 |
+|  Global memory (in GB)                                                                    11.7078 |
+|  ECC enabled                                                                                    0 |
++--------------------------------------------------------------------------------------------------+
+| Started at:                                                             Sun Jan 18 2026, 13:49:25 |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+| Simulation time: 0.000000 s, simulation step: 0                                                   |
+| Current time:                                                           Sun Jan 18 2026, 13:49:25 |
+| Number of fluid particles:                                                                1290096 |
+| Number of allocated fluid particles:                                                      1290096 |
+| Number of boundary particles:                                                             1120968 |
+| Number of allocated fluid particles:                                                      1120968 |
++--------------------------------------------------------------------------------------------------+
+| Saved:                                                       results/fluid_0.000000_particles.vtk |
+| Saved:                                                    results/boundary_0.000000_particles.vtk |
+| Saved:                                                                  results/grid_0.000000.vtk |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                               SPH simulation successfully finished.                              |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Ended at:                                                               Sun Jan 18 2026, 14:33:33 |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                          Computation time                                        |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| integrate                                                                                  41.869 |
+| integrate-average                                                                     0.000556391 |
+| integrate-percentage                                                                      1.58257 |
++--------------------------------------------------------------------------------------------------+
+| interact                                                                                  2540.84 |
+| interact-average                                                                        0.0337648 |
+| interact-percentage                                                                       96.0387 |
++--------------------------------------------------------------------------------------------------+
+| search                                                                                    62.9326 |
+| search-average                                                                        0.000836302 |
+| search-percentage                                                                         2.37873 |
++--------------------------------------------------------------------------------------------------+
+| search_cellIndices                                                                              0 |
+| search_cellIndices-average                                                                      0 |
+| search_cellIndices-percentage                                                                   0 |
++--------------------------------------------------------------------------------------------------+
+| search_reset                                                                                    0 |
+| search_reset-average                                                                            0 |
+| search_reset-percentage                                                                         0 |
++--------------------------------------------------------------------------------------------------+
+| search_sort                                                                                     0 |
+| search_sort-average                                                                             0 |
+| search_sort-percentage                                                                          0 |
++--------------------------------------------------------------------------------------------------+
+| search_toCells                                                                                  0 |
+| search_toCells-average                                                                          0 |
+| search_toCells-percentage                                                                       0 |
++--------------------------------------------------------------------------------------------------+
+| Total time:                                                                               2645.64 |
++--------------------------------------------------------------------------------------------------+
+Running TNL-SPH solver with resolution 0.0075.
+-- Trying to find DCMTK expecting DCMTKConfig.cmake
+-- Trying to find DCMTK expecting DCMTKConfig.cmake - failed
+-- Trying to find DCMTK relying on FindDCMTK.cmake
+-- Please set DCMTK_DIR and re-run configure (missing: DCMTK_config_INCLUDE_DIR DCMTK_dcmdata_INCLUDE_DIR DCMTK_dcmimage_INCLUDE_DIR DCMTK_dcmimgle_INCLUDE_DIR DCMTK_dcmjpeg_INCLUDE_DIR DCMTK_dcmjpls_INCLUDE_DIR DCMTK_dcmnet_INCLUDE_DIR DCMTK_dcmpstat_INCLUDE_DIR DCMTK_dcmqrdb_INCLUDE_DIR DCMTK_dcmsign_INCLUDE_DIR DCMTK_dcmsr_INCLUDE_DIR DCMTK_dcmtls_INCLUDE_DIR DCMTK_ofstd_INCLUDE_DIR DCMTK_oflog_INCLUDE_DIR DCMTK_LIBRARIES) 
+-- Gunrock not found.
+-- Compiling without Tensor Core support.
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- GenCase download is disabled (ENABLE_GENCASE_DOWNLOAD is FALSE)
+-- GenCase_linux64 already exists at /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build/_deps/tnl_sph-src/src/tools/3rdparty/GenCase_linux64, skipping download
+-- Configuring done (29.5s)
+-- Generating done (169.9s)
+-- Build files have been written to: /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build
+Built target damBreak3D_WCSPH-DBC_benchmark
+Initial particle spacing: 0.0075
+
+
+ <GENCASE>  Copyright (c) 2025 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ GenCase is a free tool for DualSPHysics simulations.
+ DualSPHysics project is an international collaboration between
+ University of Vigo (Spain) and University of Manchester (UK).
+
+ Redistribution and use in binary form, without modification, are
+ permitted provided that the following conditions are met:
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Redistributions or modifications of source code are not permitted 
+   unless expressly authorised, and must retain the above copyright 
+   notice, this list of conditions and the following disclaimer.
+ * Neither the name of the GenCase nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+GenCase v5.4.354.01 (07-04-2025)
+=================================
+OmpThreads: 1
+
+[LoadXMLInit]
+List: GeometryForNormals
+List: MAIN
+
+Total operations: 38
+[LoadXMLInit-End  time:0.020s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  VResId=[0]  Dp=[0.0075]  PosMin_x=[-1]  PosMin_y=[-1]  PosMin_z=[-1]  PosMax_x=[3.3]  PosMax_y=[1.1]  PosMax_z=[2.1]  CaseName=["damBreak3D_WCSPH-DBC"]  Data2D=[0]  Data2DPosy=[0]  H=[0.015]  MassBound=[0.000421875]  MassFluid=[0.000421875]
+
+Mk size: 1 bytes
+Case limits: (-1,-1,-1) - (3.3,1.1,2.1)
+Distance between points (Dp): 0.0075
+Case domain: (0,0,0)-(572,279,412)
+Domain points: 573 x 280 x 413 = 66,261,720
+Case parts: 1 x 413z
+Memory: 0.06 GiB  63.19 MiB  (66,261,720)
+
+> MAIN
+>> GeometryForNormals
+FileShapes> hdp_Actual.vtk  shapes:22  points:44   (time:0.020s)
+<< GeometryForNormals (8+6+1)
+FileDbgDomains> damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_dbg-fillbox.vtk  domains:1
+FileShapes> _Actual.vtk  shapes:66  points:132   (time:0.008s)
+<MAIN (Operations= 25+13+2 = 40)
+
+Triangles: 176 (0 ignored)
+[Draw-End  time:0.214s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.004s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:2.509s)
+BitSizeTot: 28 (2 + 9+8+9)
+Points loaded: 2,861,389
+Sorting points by Z...
+Sorting points by Mk...
+Computing Grid-points...  (time:0.616s)
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10): 1265523  -->  1265523
+  block[  1] (mk: 11):  13299  -->   13299
+Points -> Fluid particles:
+  block[  2] (mk:  1): 1582567  -->  1582567
+
+Particle summary:
+  Fixed....: 1,278,822  id:(0-1278821)   MKs:2 (10-11)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 1,582,567  id:(1278822-2861388)   MKs:1 (1)
+
+Total particles: 2,861,389 (bound=1278822 (fx=1278822 mv=0 ft=0) fluid=1582567)
+Total MK blocks: 3 (bound=2 (fx=2 mv=0 ft=0) fluid=1)
+
+Maximum depth: 0.54 (automatic)
+Speed of system: 2.30161 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 46.0322 max(46.0322,23.0161)
+Speed of sound: 46.0322 (automatic)
+
+Coefh:1.154701 (hdp:2.000000)
+
+[PreparePoints-End  time:3.152s]
+
+[SaveCase3D]
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_MkCells.vtk  (time:0.008s, shapes:42, points:168)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.bi4<double>  (time:1.192s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Bound.vtk  (time: 0.359s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Fluid.vtk  (time: 0.682s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.xml  (time:0.027s)
+ 
+Computing normals...
+
+*** WARNING: Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+  Evaluating 1,278,822 particles with 22 shapes (distance 2x H = 0.03).
+  Time for computing 1,352,278 normals: 0.434s   Max.Memory: 48.75 MiB
+  Non-zero particle normals: 1,278,822/1,278,822    Normals size range: (0.003750 - 0.032476).
+  Final zero normals: 0/1,278,822 (0.0%)   Maximum normal: 0.032476 (2.17 x h)
+
+Save files time: 6.234s
+
+Particle limits:
+  X range: -0.0175 to 3.2375 [m]
+  Y range: -0.0175 to 1.0175 [m]
+  Z range: -0.0175 to 2.015 [m]
+
+[SaveCase3D-End  time:6.367s]
+
+[WARNINGS]
+1. Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+Time of execution: 9.827 sec. (1 threads)
+
+Finished execution (code=0).
+
+Geometry for resolutin with initial particle spacing 0.0075 was successfuly generated.
+{'dp': 0.0075, 'h_coef': 2, 'density': 1000, 'speed_of_sound': 45.17, 'cfl': 0.15, 'particle_mass': 0.000421875, 'smoothing_length': 0.015, 'search_radius': 0.03, 'time_step': 4.9811822005756026e-05, 'fluid_n': 1582567, 'boundary_n': 1278822, 'domain_origin_x': -0.04773750007487833, 'domain_origin_y': -0.04773750007487833, 'domain_origin_z': -0.04773750007487833, 'domain_end_x': 3.2375, 'domain_end_y': 1.0175, 'domain_end_z': 2.015, 'domain_size_x': 3.3315749521527436, 'domain_size_y': 1.1004750432047992, 'domain_size_z': 3.1152376574311407}
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation initialization.                                 |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Reading fluid particles:                                               sources/dambreak_fluid.vtk |
+| Reading boundary particles:                                         sources/dambreak_boundary.vtk |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                              SPH simulation successfully initialized.                            |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation configuration.                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Case name:                                                                   damBreak3D_WCSPH-DBC |
++--------------------------------------------------------------------------------------------------+
+| MPI processes:                                                                                  1 |
+| Device type:                                                                    TNL::Devices::GPU |
+| Particle system type:                                    TNL::ParticleSystem::ParticlesLinkedList |
+| SPH model:                                                                    TNL::SPH::WCSPH_DBC |
+| Verbose:                                                                            with-snapshot |
+| Output directory:                                                                         results |
+| Particles format                                                                             auto |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                         TNL::SPH::WCSPH_DBC (delta-WCSPH) model parameters                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Resolution parameters                                                                             |
+|  Initial particle distance (dp):                                                           0.0075 |
+|  Smoothing length (h):                                                                      0.015 |
+|  Spatial resolution (h/dp):                                                                     2 |
+|  Particle mass (mass):                                                                  0.0004219 |
+| Model parameters                                                                                  |
+|  Diffusive term:                                                   TNL::SPH::MolteniDiffusiveTerm |
+|  Diffusive term coefficient (delta):                                                          0.1 |
+|  Viscous term:                                                      TNL::SPH::ArtificialViscosity |
+|  Artificial vicosity coefficient (alpha):                                                    0.02 |
+|  Equation of state:                                           TNL::SPH::TaitWeaklyCompressibleEOS |
+| Coefficient of EOS (coefB):                                                                291476 |
+|  Speed of sound (speedOfSound):                                                             45.17 |
+|  Referentail density (rho0):                                                                 1000 |
+| Boundary condition type                                                  TNL::SPH::WCSPH_DBC::DBC |
+| Time integration                                                                                  |
+|  Integration scheme:                                            TNL::SPH::WCSPH_DBC::VerletScheme |
+|  Time stepping:                                                        TNL::SPH::ConstantTimeStep |
+|  Initial time step (dtInit):                                                            4.981e-05 |
+| External bulk force:                                                              [ 0, 0, -9.81 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                     Fluid object information.                                    |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1582567 |
+| Number of allocated particles:                                                            1582567 |
+| Search radius:                                                                               0.03 |
+| Grid origin:                                                     [ -0.04774, -0.04774, -0.04774 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.04774, -0.04774, -0.04774 ] |
+| Grid dimensions:                                                                 [ 113, 39, 106 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.04774, -0.04774, -0.04774 ] |
+| Grid dimension with overlap:                                                     [ 113, 39, 106 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                    Boundary object information:                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1278822 |
+| Number of allocated particles:                                                            1278822 |
+| Search radius:                                                                               0.03 |
+| Grid origin:                                                     [ -0.04774, -0.04774, -0.04774 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.04774, -0.04774, -0.04774 ] |
+| Grid dimensions:                                                                 [ 113, 39, 106 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.04774, -0.04774, -0.04774 ] |
+| Grid dimension with overlap:                                                     [ 113, 39, 106 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                        System information.                                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Host name:                                                                      konos3.fav.zcu.cz |
+| System:                                                                                     Linux |
+| Release:                                                                           6.1.0-41-amd64 |
+| Architecture:                                                                               AMD64 |
+| TNL compiler:                                                               Nvidia NVCC (12.6.68) |
+| CPU info                                                                                          |
+|  Model name:                                            Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz |
+|  Cores:                                                                                        10 |
+|  Threads per core:                                                                              2 |
+|  Max clock rate (in MHz):                                                                    3100 |
+|  Cache (L1d, L1i, L2, L3):                                                     32, 32, 256, 25600 |
+| GPU info                                                                                          |
+|  Name                                                                  NVIDIA GeForce GTX 1080 Ti |
+|  Architecture                                                                                 6.1 |
+|  GPU cores                                                                                   3584 |
+|  Global memory (in GB)                                                                    11.7078 |
+|  ECC enabled                                                                                    0 |
++--------------------------------------------------------------------------------------------------+
+| Started at:                                                             Sun Jan 18 2026, 14:37:26 |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+| Simulation time: 0.000000 s, simulation step: 0                                                   |
+| Current time:                                                           Sun Jan 18 2026, 14:37:26 |
+| Number of fluid particles:                                                                1582567 |
+| Number of allocated fluid particles:                                                      1582567 |
+| Number of boundary particles:                                                             1278822 |
+| Number of allocated fluid particles:                                                      1278822 |
++--------------------------------------------------------------------------------------------------+
+| Saved:                                                       results/fluid_0.000000_particles.vtk |
+| Saved:                                                    results/boundary_0.000000_particles.vtk |
+| Saved:                                                                  results/grid_0.000000.vtk |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                               SPH simulation successfully finished.                              |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Ended at:                                                               Sun Jan 18 2026, 15:35:10 |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                          Computation time                                        |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| integrate                                                                                 53.1742 |
+| integrate-average                                                                     0.000662368 |
+| integrate-percentage                                                                      1.53679 |
++--------------------------------------------------------------------------------------------------+
+| interact                                                                                  3325.74 |
+| interact-average                                                                        0.0414273 |
+| interact-percentage                                                                       96.1173 |
++--------------------------------------------------------------------------------------------------+
+| search                                                                                    81.1711 |
+| search-average                                                                         0.00101111 |
+| search-percentage                                                                         2.34593 |
++--------------------------------------------------------------------------------------------------+
+| search_cellIndices                                                                              0 |
+| search_cellIndices-average                                                                      0 |
+| search_cellIndices-percentage                                                                   0 |
++--------------------------------------------------------------------------------------------------+
+| search_reset                                                                                    0 |
+| search_reset-average                                                                            0 |
+| search_reset-percentage                                                                         0 |
++--------------------------------------------------------------------------------------------------+
+| search_sort                                                                                     0 |
+| search_sort-average                                                                             0 |
+| search_sort-percentage                                                                          0 |
++--------------------------------------------------------------------------------------------------+
+| search_toCells                                                                                  0 |
+| search_toCells-average                                                                          0 |
+| search_toCells-percentage                                                                       0 |
++--------------------------------------------------------------------------------------------------+
+| Total time:                                                                               3460.09 |
++--------------------------------------------------------------------------------------------------+
+Running TNL-SPH solver with resolution 0.007.
+-- Trying to find DCMTK expecting DCMTKConfig.cmake
+-- Trying to find DCMTK expecting DCMTKConfig.cmake - failed
+-- Trying to find DCMTK relying on FindDCMTK.cmake
+-- Please set DCMTK_DIR and re-run configure (missing: DCMTK_config_INCLUDE_DIR DCMTK_dcmdata_INCLUDE_DIR DCMTK_dcmimage_INCLUDE_DIR DCMTK_dcmimgle_INCLUDE_DIR DCMTK_dcmjpeg_INCLUDE_DIR DCMTK_dcmjpls_INCLUDE_DIR DCMTK_dcmnet_INCLUDE_DIR DCMTK_dcmpstat_INCLUDE_DIR DCMTK_dcmqrdb_INCLUDE_DIR DCMTK_dcmsign_INCLUDE_DIR DCMTK_dcmsr_INCLUDE_DIR DCMTK_dcmtls_INCLUDE_DIR DCMTK_ofstd_INCLUDE_DIR DCMTK_oflog_INCLUDE_DIR DCMTK_LIBRARIES) 
+-- Gunrock not found.
+-- Compiling without Tensor Core support.
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- GenCase download is disabled (ENABLE_GENCASE_DOWNLOAD is FALSE)
+-- GenCase_linux64 already exists at /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build/_deps/tnl_sph-src/src/tools/3rdparty/GenCase_linux64, skipping download
+-- Configuring done (24.8s)
+-- Generating done (153.4s)
+-- Build files have been written to: /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build
+Built target damBreak3D_WCSPH-DBC_benchmark
+Initial particle spacing: 0.007
+
+
+ <GENCASE>  Copyright (c) 2025 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ GenCase is a free tool for DualSPHysics simulations.
+ DualSPHysics project is an international collaboration between
+ University of Vigo (Spain) and University of Manchester (UK).
+
+ Redistribution and use in binary form, without modification, are
+ permitted provided that the following conditions are met:
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Redistributions or modifications of source code are not permitted 
+   unless expressly authorised, and must retain the above copyright 
+   notice, this list of conditions and the following disclaimer.
+ * Neither the name of the GenCase nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+GenCase v5.4.354.01 (07-04-2025)
+=================================
+OmpThreads: 1
+
+[LoadXMLInit]
+List: GeometryForNormals
+List: MAIN
+
+Total operations: 38
+[LoadXMLInit-End  time:0.019s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  VResId=[0]  Dp=[0.007]  PosMin_x=[-1]  PosMin_y=[-1]  PosMin_z=[-1]  PosMax_x=[3.3]  PosMax_y=[1.1]  PosMax_z=[2.1]  CaseName=["damBreak3D_WCSPH-DBC"]  Data2D=[0]  Data2DPosy=[0]  H=[0.014]  MassBound=[0.000343]  MassFluid=[0.000343]
+
+Mk size: 1 bytes
+Case limits: (-1,-1,-1) - (3.3,1.1,2.1)
+Distance between points (Dp): 0.007
+Case domain: (0,0,0)-(613,299,441)
+Domain points: 614 x 300 x 442 = 81,416,400
+Case parts: 1 x 442z
+Memory: 0.08 GiB  77.64 MiB  (81,416,400)
+
+> MAIN
+>> GeometryForNormals
+FileShapes> hdp_Actual.vtk  shapes:22  points:44   (time:0.020s)
+<< GeometryForNormals (8+6+1)
+FileDbgDomains> damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_dbg-fillbox.vtk  domains:1
+FileShapes> _Actual.vtk  shapes:66  points:132   (time:0.008s)
+<MAIN (Operations= 25+13+2 = 40)
+
+Triangles: 176 (0 ignored)
+[Draw-End  time:0.230s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.004s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:1.507s)
+BitSizeTot: 28 (2 + 9+8+9)
+Points loaded: 3,374,828
+Sorting points by Z...
+Sorting points by Mk...
+Computing Grid-points...  (time:0.670s)
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10): 1446714  -->  1446714
+  block[  1] (mk: 11):  14664  -->   14664
+Points -> Fluid particles:
+  block[  2] (mk:  1): 1913450  -->  1913450
+
+Particle summary:
+  Fixed....: 1,461,378  id:(0-1461377)   MKs:2 (10-11)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 1,913,450  id:(1461378-3374827)   MKs:1 (1)
+
+Total particles: 3,374,828 (bound=1461378 (fx=1461378 mv=0 ft=0) fluid=1913450)
+Total MK blocks: 3 (bound=2 (fx=2 mv=0 ft=0) fluid=1)
+
+Maximum depth: 0.532 (automatic)
+Speed of system: 2.2845 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 45.6899 max(45.6899,22.845)
+Speed of sound: 45.6899 (automatic)
+
+Coefh:1.154701 (hdp:2.000000)
+
+[PreparePoints-End  time:2.206s]
+
+[SaveCase3D]
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_MkCells.vtk  (time:0.008s, shapes:42, points:168)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.bi4<double>  (time:1.395s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Bound.vtk  (time: 0.392s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Fluid.vtk  (time: 0.798s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.xml  (time:0.014s)
+ 
+Computing normals...
+
+*** WARNING: Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+  Evaluating 1,461,378 particles with 22 shapes (distance 2x H = 0.028).
+  Time for computing 1,539,988 normals: 0.468s   Max.Memory: 55.82 MiB
+  Non-zero particle normals: 1,461,378/1,461,378    Normals size range: (0.003500 - 0.030311).
+  Final zero normals: 0/1,461,378 (0.0%)   Maximum normal: 0.0303109 (2.17 x h)
+
+Save files time: 5.478s
+
+Particle limits:
+  X range: -0.013 to 3.235 [m]
+  Y range: -0.013 to 1.016 [m]
+  Z range: -0.013 to 2.017 [m]
+
+[SaveCase3D-End  time:5.630s]
+
+[WARNINGS]
+1. Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+Time of execution: 8.156 sec. (1 threads)
+
+Finished execution (code=0).
+
+Geometry for resolutin with initial particle spacing 0.007 was successfuly generated.
+{'dp': 0.007, 'h_coef': 2, 'density': 1000, 'speed_of_sound': 45.17, 'cfl': 0.15, 'particle_mass': 0.00034300000000000004, 'smoothing_length': 0.014, 'search_radius': 0.028, 'time_step': 4.649103387203896e-05, 'fluid_n': 1913450, 'boundary_n': 1461378, 'domain_origin_x': -0.041205000269561996, 'domain_origin_y': -0.041205000269561996, 'domain_origin_z': -0.041205000269561996, 'domain_end_x': 3.235, 'domain_end_y': 1.016, 'domain_end_z': 2.017, 'domain_size_x': 3.320519894840866, 'domain_size_y': 1.0904250328566134, 'domain_size_z': 3.1087049401880797}
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation initialization.                                 |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Reading fluid particles:                                               sources/dambreak_fluid.vtk |
+| Reading boundary particles:                                         sources/dambreak_boundary.vtk |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                              SPH simulation successfully initialized.                            |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation configuration.                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Case name:                                                                   damBreak3D_WCSPH-DBC |
++--------------------------------------------------------------------------------------------------+
+| MPI processes:                                                                                  1 |
+| Device type:                                                                    TNL::Devices::GPU |
+| Particle system type:                                    TNL::ParticleSystem::ParticlesLinkedList |
+| SPH model:                                                                    TNL::SPH::WCSPH_DBC |
+| Verbose:                                                                            with-snapshot |
+| Output directory:                                                                         results |
+| Particles format                                                                             auto |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                         TNL::SPH::WCSPH_DBC (delta-WCSPH) model parameters                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Resolution parameters                                                                             |
+|  Initial particle distance (dp):                                                            0.007 |
+|  Smoothing length (h):                                                                      0.014 |
+|  Spatial resolution (h/dp):                                                                     2 |
+|  Particle mass (mass):                                                                   0.000343 |
+| Model parameters                                                                                  |
+|  Diffusive term:                                                   TNL::SPH::MolteniDiffusiveTerm |
+|  Diffusive term coefficient (delta):                                                          0.1 |
+|  Viscous term:                                                      TNL::SPH::ArtificialViscosity |
+|  Artificial vicosity coefficient (alpha):                                                    0.02 |
+|  Equation of state:                                           TNL::SPH::TaitWeaklyCompressibleEOS |
+| Coefficient of EOS (coefB):                                                                291476 |
+|  Speed of sound (speedOfSound):                                                             45.17 |
+|  Referentail density (rho0):                                                                 1000 |
+| Boundary condition type                                                  TNL::SPH::WCSPH_DBC::DBC |
+| Time integration                                                                                  |
+|  Integration scheme:                                            TNL::SPH::WCSPH_DBC::VerletScheme |
+|  Time stepping:                                                        TNL::SPH::ConstantTimeStep |
+|  Initial time step (dtInit):                                                            4.649e-05 |
+| External bulk force:                                                              [ 0, 0, -9.81 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                     Fluid object information.                                    |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1913450 |
+| Number of allocated particles:                                                            1913450 |
+| Search radius:                                                                              0.028 |
+| Grid origin:                                                     [ -0.04121, -0.04121, -0.04121 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.04121, -0.04121, -0.04121 ] |
+| Grid dimensions:                                                                 [ 121, 41, 113 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.04121, -0.04121, -0.04121 ] |
+| Grid dimension with overlap:                                                     [ 121, 41, 113 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                    Boundary object information:                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1461378 |
+| Number of allocated particles:                                                            1461378 |
+| Search radius:                                                                              0.028 |
+| Grid origin:                                                     [ -0.04121, -0.04121, -0.04121 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.04121, -0.04121, -0.04121 ] |
+| Grid dimensions:                                                                 [ 121, 41, 113 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.04121, -0.04121, -0.04121 ] |
+| Grid dimension with overlap:                                                     [ 121, 41, 113 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                        System information.                                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Host name:                                                                      konos3.fav.zcu.cz |
+| System:                                                                                     Linux |
+| Release:                                                                           6.1.0-41-amd64 |
+| Architecture:                                                                               AMD64 |
+| TNL compiler:                                                               Nvidia NVCC (12.6.68) |
+| CPU info                                                                                          |
+|  Model name:                                            Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz |
+|  Cores:                                                                                        10 |
+|  Threads per core:                                                                              2 |
+|  Max clock rate (in MHz):                                                                    3100 |
+|  Cache (L1d, L1i, L2, L3):                                                     32, 32, 256, 25600 |
+| GPU info                                                                                          |
+|  Name                                                                  NVIDIA GeForce GTX 1080 Ti |
+|  Architecture                                                                                 6.1 |
+|  GPU cores                                                                                   3584 |
+|  Global memory (in GB)                                                                    11.7078 |
+|  ECC enabled                                                                                    0 |
++--------------------------------------------------------------------------------------------------+
+| Started at:                                                             Sun Jan 18 2026, 15:38:40 |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+| Simulation time: 0.000000 s, simulation step: 0                                                   |
+| Current time:                                                           Sun Jan 18 2026, 15:38:41 |
+| Number of fluid particles:                                                                1913450 |
+| Number of allocated fluid particles:                                                      1913450 |
+| Number of boundary particles:                                                             1461378 |
+| Number of allocated fluid particles:                                                      1461378 |
++--------------------------------------------------------------------------------------------------+
+| Saved:                                                       results/fluid_0.000000_particles.vtk |
+| Saved:                                                    results/boundary_0.000000_particles.vtk |
+| Saved:                                                                  results/grid_0.000000.vtk |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                               SPH simulation successfully finished.                              |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Ended at:                                                               Sun Jan 18 2026, 16:54:13 |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                          Computation time                                        |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| integrate                                                                                 64.4887 |
+| integrate-average                                                                     0.000749537 |
+| integrate-percentage                                                                      1.42364 |
++--------------------------------------------------------------------------------------------------+
+| interact                                                                                  4367.53 |
+| interact-average                                                                        0.0507628 |
+| interact-percentage                                                                       96.4166 |
++--------------------------------------------------------------------------------------------------+
+| search                                                                                    97.8347 |
+| search-average                                                                         0.00113711 |
+| search-percentage                                                                         2.15978 |
++--------------------------------------------------------------------------------------------------+
+| search_cellIndices                                                                              0 |
+| search_cellIndices-average                                                                      0 |
+| search_cellIndices-percentage                                                                   0 |
++--------------------------------------------------------------------------------------------------+
+| search_reset                                                                                    0 |
+| search_reset-average                                                                            0 |
+| search_reset-percentage                                                                         0 |
++--------------------------------------------------------------------------------------------------+
+| search_sort                                                                                     0 |
+| search_sort-average                                                                             0 |
+| search_sort-percentage                                                                          0 |
++--------------------------------------------------------------------------------------------------+
+| search_toCells                                                                                  0 |
+| search_toCells-average                                                                          0 |
+| search_toCells-percentage                                                                       0 |
++--------------------------------------------------------------------------------------------------+
+| Total time:                                                                               4529.85 |
++--------------------------------------------------------------------------------------------------+
+Running TNL-SPH solver with resolution 0.0065.
+-- Trying to find DCMTK expecting DCMTKConfig.cmake
+-- Trying to find DCMTK expecting DCMTKConfig.cmake - failed
+-- Trying to find DCMTK relying on FindDCMTK.cmake
+-- Please set DCMTK_DIR and re-run configure (missing: DCMTK_config_INCLUDE_DIR DCMTK_dcmdata_INCLUDE_DIR DCMTK_dcmimage_INCLUDE_DIR DCMTK_dcmimgle_INCLUDE_DIR DCMTK_dcmjpeg_INCLUDE_DIR DCMTK_dcmjpls_INCLUDE_DIR DCMTK_dcmnet_INCLUDE_DIR DCMTK_dcmpstat_INCLUDE_DIR DCMTK_dcmqrdb_INCLUDE_DIR DCMTK_dcmsign_INCLUDE_DIR DCMTK_dcmsr_INCLUDE_DIR DCMTK_dcmtls_INCLUDE_DIR DCMTK_ofstd_INCLUDE_DIR DCMTK_oflog_INCLUDE_DIR DCMTK_LIBRARIES) 
+-- Gunrock not found.
+-- Compiling without Tensor Core support.
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- GenCase download is disabled (ENABLE_GENCASE_DOWNLOAD is FALSE)
+-- GenCase_linux64 already exists at /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build/_deps/tnl_sph-src/src/tools/3rdparty/GenCase_linux64, skipping download
+-- Configuring done (27.9s)
+-- Generating done (159.5s)
+-- Build files have been written to: /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build
+Built target damBreak3D_WCSPH-DBC_benchmark
+Initial particle spacing: 0.0065
+
+
+ <GENCASE>  Copyright (c) 2025 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ GenCase is a free tool for DualSPHysics simulations.
+ DualSPHysics project is an international collaboration between
+ University of Vigo (Spain) and University of Manchester (UK).
+
+ Redistribution and use in binary form, without modification, are
+ permitted provided that the following conditions are met:
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Redistributions or modifications of source code are not permitted 
+   unless expressly authorised, and must retain the above copyright 
+   notice, this list of conditions and the following disclaimer.
+ * Neither the name of the GenCase nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+GenCase v5.4.354.01 (07-04-2025)
+=================================
+OmpThreads: 1
+
+[LoadXMLInit]
+List: GeometryForNormals
+List: MAIN
+
+Total operations: 38
+[LoadXMLInit-End  time:0.019s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  VResId=[0]  Dp=[0.0065]  PosMin_x=[-1]  PosMin_y=[-1]  PosMin_z=[-1]  PosMax_x=[3.3]  PosMax_y=[1.1]  PosMax_z=[2.1]  CaseName=["damBreak3D_WCSPH-DBC"]  Data2D=[0]  Data2DPosy=[0]  H=[0.013]  MassBound=[0.000274625]  MassFluid=[0.000274625]
+
+Mk size: 1 bytes
+Case limits: (-1,-1,-1) - (3.3,1.1,2.1)
+Distance between points (Dp): 0.0065
+Case domain: (0,0,0)-(660,322,475)
+Domain points: 661 x 323 x 476 = 101,627,428
+Case parts: 1 x 476z
+Memory: 0.09 GiB  96.92 MiB  (101,627,428)
+
+> MAIN
+>> GeometryForNormals
+FileShapes> hdp_Actual.vtk  shapes:22  points:44   (time:0.020s)
+<< GeometryForNormals (8+6+1)
+FileDbgDomains> damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_dbg-fillbox.vtk  domains:1
+FileShapes> _Actual.vtk  shapes:66  points:132   (time:0.008s)
+<MAIN (Operations= 25+13+2 = 40)
+
+Triangles: 176 (0 ignored)
+[Draw-End  time:0.287s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.004s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:3.679s)
+BitSizeTot: 28 (2 + 9+8+9)
+Points loaded: 4,079,190
+Sorting points by Z...
+Sorting points by Mk...
+Computing Grid-points...  (time:0.898s)
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10): 1674912  -->  1674912
+  block[  1] (mk: 11):  16866  -->   16866
+Points -> Fluid particles:
+  block[  2] (mk:  1): 2387412  -->  2387412
+
+Particle summary:
+  Fixed....: 1,691,778  id:(0-1691777)   MKs:2 (10-11)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 2,387,412  id:(1691778-4079189)   MKs:1 (1)
+
+Total particles: 4,079,190 (bound=1691778 (fx=1691778 mv=0 ft=0) fluid=2387412)
+Total MK blocks: 3 (bound=2 (fx=2 mv=0 ft=0) fluid=1)
+
+Maximum depth: 0.533 (automatic)
+Speed of system: 2.28664 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 45.7328 max(45.7328,22.8664)
+Speed of sound: 45.7328 (automatic)
+
+Coefh:1.154701 (hdp:2.000000)
+
+[PreparePoints-End  time:4.611s]
+
+[SaveCase3D]
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_MkCells.vtk  (time:0.008s, shapes:42, points:168)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.bi4<double>  (time:1.691s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Bound.vtk  (time: 0.459s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Fluid.vtk  (time: 0.995s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.xml  (time:0.015s)
+ 
+Computing normals...
+
+*** WARNING: Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+  Evaluating 1,691,778 particles with 22 shapes (distance 2x H = 0.026).
+  Time for computing 1,776,046 normals: 0.564s   Max.Memory: 64.84 MiB
+  Non-zero particle normals: 1,691,778/1,691,778    Normals size range: (0.003250 - 0.028146).
+  Final zero normals: 0/1,691,778 (0.0%)   Maximum normal: 0.0281458 (2.17 x h)
+
+Save files time: 6.602s
+
+Particle limits:
+  X range: -0.012 to 3.2315 [m]
+  Y range: -0.012 to 1.015 [m]
+  Z range: -0.012 to 2.016 [m]
+
+[SaveCase3D-End  time:6.787s]
+
+[WARNINGS]
+1. Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+Time of execution: 11.781 sec. (1 threads)
+
+Finished execution (code=0).
+
+Geometry for resolutin with initial particle spacing 0.0065 was successfuly generated.
+{'dp': 0.0065, 'h_coef': 2, 'density': 1000, 'speed_of_sound': 45.17, 'cfl': 0.15, 'particle_mass': 0.00027462499999999997, 'smoothing_length': 0.013, 'search_radius': 0.026, 'time_step': 4.317024573832189e-05, 'fluid_n': 2387412, 'boundary_n': 1691778, 'domain_origin_x': -0.03819000010482966, 'domain_origin_y': -0.03819000010482966, 'domain_origin_z': -0.03819000010482966, 'domain_end_x': 3.2315, 'domain_end_y': 1.015, 'domain_end_z': 2.016, 'domain_size_x': 3.3119774100112163, 'domain_size_y': 1.0843949857281892, 'domain_size_z': 3.1011900487422195}
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation initialization.                                 |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Reading fluid particles:                                               sources/dambreak_fluid.vtk |
+| Reading boundary particles:                                         sources/dambreak_boundary.vtk |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                              SPH simulation successfully initialized.                            |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation configuration.                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Case name:                                                                   damBreak3D_WCSPH-DBC |
++--------------------------------------------------------------------------------------------------+
+| MPI processes:                                                                                  1 |
+| Device type:                                                                    TNL::Devices::GPU |
+| Particle system type:                                    TNL::ParticleSystem::ParticlesLinkedList |
+| SPH model:                                                                    TNL::SPH::WCSPH_DBC |
+| Verbose:                                                                            with-snapshot |
+| Output directory:                                                                         results |
+| Particles format                                                                             auto |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                         TNL::SPH::WCSPH_DBC (delta-WCSPH) model parameters                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Resolution parameters                                                                             |
+|  Initial particle distance (dp):                                                           0.0065 |
+|  Smoothing length (h):                                                                      0.013 |
+|  Spatial resolution (h/dp):                                                                     2 |
+|  Particle mass (mass):                                                                  0.0002746 |
+| Model parameters                                                                                  |
+|  Diffusive term:                                                   TNL::SPH::MolteniDiffusiveTerm |
+|  Diffusive term coefficient (delta):                                                          0.1 |
+|  Viscous term:                                                      TNL::SPH::ArtificialViscosity |
+|  Artificial vicosity coefficient (alpha):                                                    0.02 |
+|  Equation of state:                                           TNL::SPH::TaitWeaklyCompressibleEOS |
+| Coefficient of EOS (coefB):                                                                291476 |
+|  Speed of sound (speedOfSound):                                                             45.17 |
+|  Referentail density (rho0):                                                                 1000 |
+| Boundary condition type                                                  TNL::SPH::WCSPH_DBC::DBC |
+| Time integration                                                                                  |
+|  Integration scheme:                                            TNL::SPH::WCSPH_DBC::VerletScheme |
+|  Time stepping:                                                        TNL::SPH::ConstantTimeStep |
+|  Initial time step (dtInit):                                                            4.317e-05 |
+| External bulk force:                                                              [ 0, 0, -9.81 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                     Fluid object information.                                    |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      2387412 |
+| Number of allocated particles:                                                            2387412 |
+| Search radius:                                                                              0.026 |
+| Grid origin:                                                     [ -0.03819, -0.03819, -0.03819 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.03819, -0.03819, -0.03819 ] |
+| Grid dimensions:                                                                 [ 129, 44, 121 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.03819, -0.03819, -0.03819 ] |
+| Grid dimension with overlap:                                                     [ 129, 44, 121 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                    Boundary object information:                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1691778 |
+| Number of allocated particles:                                                            1691778 |
+| Search radius:                                                                              0.026 |
+| Grid origin:                                                     [ -0.03819, -0.03819, -0.03819 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.03819, -0.03819, -0.03819 ] |
+| Grid dimensions:                                                                 [ 129, 44, 121 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.03819, -0.03819, -0.03819 ] |
+| Grid dimension with overlap:                                                     [ 129, 44, 121 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                        System information.                                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Host name:                                                                      konos3.fav.zcu.cz |
+| System:                                                                                     Linux |
+| Release:                                                                           6.1.0-41-amd64 |
+| Architecture:                                                                               AMD64 |
+| TNL compiler:                                                               Nvidia NVCC (12.6.68) |
+| CPU info                                                                                          |
+|  Model name:                                            Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz |
+|  Cores:                                                                                        10 |
+|  Threads per core:                                                                              2 |
+|  Max clock rate (in MHz):                                                                    3100 |
+|  Cache (L1d, L1i, L2, L3):                                                     32, 32, 256, 25600 |
+| GPU info                                                                                          |
+|  Name                                                                  NVIDIA GeForce GTX 1080 Ti |
+|  Architecture                                                                                 6.1 |
+|  GPU cores                                                                                   3584 |
+|  Global memory (in GB)                                                                    11.7078 |
+|  ECC enabled                                                                                    0 |
++--------------------------------------------------------------------------------------------------+
+| Started at:                                                             Sun Jan 18 2026, 16:58:06 |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+| Simulation time: 0.000000 s, simulation step: 0                                                   |
+| Current time:                                                           Sun Jan 18 2026, 16:58:06 |
+| Number of fluid particles:                                                                2387412 |
+| Number of allocated fluid particles:                                                      2387412 |
+| Number of boundary particles:                                                             1691778 |
+| Number of allocated fluid particles:                                                      1691778 |
++--------------------------------------------------------------------------------------------------+
+| Saved:                                                       results/fluid_0.000000_particles.vtk |
+| Saved:                                                    results/boundary_0.000000_particles.vtk |
+| Saved:                                                                  results/grid_0.000000.vtk |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                               SPH simulation successfully finished.                              |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Ended at:                                                               Sun Jan 18 2026, 18:38:47 |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                          Computation time                                        |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| integrate                                                                                  85.304 |
+| integrate-average                                                                     0.000920355 |
+| integrate-percentage                                                                      1.41327 |
++--------------------------------------------------------------------------------------------------+
+| interact                                                                                   5819.7 |
+| interact-average                                                                        0.0627894 |
+| interact-percentage                                                                       96.4173 |
++--------------------------------------------------------------------------------------------------+
+| search                                                                                    130.944 |
+| search-average                                                                         0.00141278 |
+| search-percentage                                                                         2.16941 |
++--------------------------------------------------------------------------------------------------+
+| search_cellIndices                                                                              0 |
+| search_cellIndices-average                                                                      0 |
+| search_cellIndices-percentage                                                                   0 |
++--------------------------------------------------------------------------------------------------+
+| search_reset                                                                                    0 |
+| search_reset-average                                                                            0 |
+| search_reset-percentage                                                                         0 |
++--------------------------------------------------------------------------------------------------+
+| search_sort                                                                                     0 |
+| search_sort-average                                                                             0 |
+| search_sort-percentage                                                                          0 |
++--------------------------------------------------------------------------------------------------+
+| search_toCells                                                                                  0 |
+| search_toCells-average                                                                          0 |
+| search_toCells-percentage                                                                       0 |
++--------------------------------------------------------------------------------------------------+
+| Total time:                                                                               6035.95 |
++--------------------------------------------------------------------------------------------------+
+Running TNL-SPH solver with resolution 0.006.
+-- Trying to find DCMTK expecting DCMTKConfig.cmake
+-- Trying to find DCMTK expecting DCMTKConfig.cmake - failed
+-- Trying to find DCMTK relying on FindDCMTK.cmake
+-- Please set DCMTK_DIR and re-run configure (missing: DCMTK_config_INCLUDE_DIR DCMTK_dcmdata_INCLUDE_DIR DCMTK_dcmimage_INCLUDE_DIR DCMTK_dcmimgle_INCLUDE_DIR DCMTK_dcmjpeg_INCLUDE_DIR DCMTK_dcmjpls_INCLUDE_DIR DCMTK_dcmnet_INCLUDE_DIR DCMTK_dcmpstat_INCLUDE_DIR DCMTK_dcmqrdb_INCLUDE_DIR DCMTK_dcmsign_INCLUDE_DIR DCMTK_dcmsr_INCLUDE_DIR DCMTK_dcmtls_INCLUDE_DIR DCMTK_ofstd_INCLUDE_DIR DCMTK_oflog_INCLUDE_DIR DCMTK_LIBRARIES) 
+-- Gunrock not found.
+-- Compiling without Tensor Core support.
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Hypre (missing: HYPRE_LIBRARIES HYPRE_INCLUDE_DIRS) (found version "0.0.0")
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- GenCase download is disabled (ENABLE_GENCASE_DOWNLOAD is FALSE)
+-- GenCase_linux64 already exists at /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build/_deps/tnl_sph-src/src/tools/3rdparty/GenCase_linux64, skipping download
+-- Configuring done (24.6s)
+-- Generating done (151.5s)
+-- Build files have been written to: /storage/praha1/home/haladto1/sph-benchmarks/damBreak3D/resources_tnl-sph/build
+Built target damBreak3D_WCSPH-DBC_benchmark
+Initial particle spacing: 0.006
+
+
+ <GENCASE>  Copyright (c) 2025 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ GenCase is a free tool for DualSPHysics simulations.
+ DualSPHysics project is an international collaboration between
+ University of Vigo (Spain) and University of Manchester (UK).
+
+ Redistribution and use in binary form, without modification, are
+ permitted provided that the following conditions are met:
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Redistributions or modifications of source code are not permitted 
+   unless expressly authorised, and must retain the above copyright 
+   notice, this list of conditions and the following disclaimer.
+ * Neither the name of the GenCase nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+GenCase v5.4.354.01 (07-04-2025)
+=================================
+OmpThreads: 1
+
+[LoadXMLInit]
+List: GeometryForNormals
+List: MAIN
+
+Total operations: 38
+[LoadXMLInit-End  time:0.019s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  VResId=[0]  Dp=[0.006]  PosMin_x=[-1]  PosMin_y=[-1]  PosMin_z=[-1]  PosMax_x=[3.3]  PosMax_y=[1.1]  PosMax_z=[2.1]  CaseName=["damBreak3D_WCSPH-DBC"]  Data2D=[0]  Data2DPosy=[0]  H=[0.012]  MassBound=[0.000216]  MassFluid=[0.000216]
+
+Mk size: 1 bytes
+Case limits: (-1,-1,-1) - (3.3,1.1,2.1)
+Distance between points (Dp): 0.006
+Case domain: (0,0,0)-(715,349,515)
+Domain points: 716 x 350 x 516 = 129,309,600
+Case parts: 1 x 516z
+Memory: 0.12 GiB  123.32 MiB  (129,309,600)
+
+> MAIN
+>> GeometryForNormals
+FileShapes> hdp_Actual.vtk  shapes:22  points:44   (time:0.019s)
+<< GeometryForNormals (8+6+1)
+FileDbgDomains> damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_dbg-fillbox.vtk  domains:1
+FileShapes> _Actual.vtk  shapes:66  points:132   (time:0.008s)
+<MAIN (Operations= 25+13+2 = 40)
+
+Triangles: 176 (0 ignored)
+[Draw-End  time:0.317s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.004s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:2.484s)
+BitSizeTot: 29 (2 + 10+8+9)
+Points loaded: 4,989,696
+Sorting points by Z...
+Sorting points by Mk...
+Computing Grid-points...  (time:0.953s)
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10): 1955991  -->  1955991
+  block[  1] (mk: 11):  19155  -->   19155
+Points -> Fluid particles:
+  block[  2] (mk:  1): 3014550  -->  3014550
+
+Particle summary:
+  Fixed....: 1,975,146  id:(0-1975145)   MKs:2 (10-11)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 3,014,550  id:(1975146-4989695)   MKs:1 (1)
+
+Total particles: 4,989,696 (bound=1975146 (fx=1975146 mv=0 ft=0) fluid=3014550)
+Total MK blocks: 3 (bound=2 (fx=2 mv=0 ft=0) fluid=1)
+
+Maximum depth: 0.534 (automatic)
+Speed of system: 2.28879 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 45.7757 max(45.7757,22.8879)
+Speed of sound: 45.7757 (automatic)
+
+Coefh:1.154701 (hdp:2.000000)
+
+[PreparePoints-End  time:3.475s]
+
+[SaveCase3D]
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_MkCells.vtk  (time:0.008s, shapes:42, points:168)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.bi4<double>  (time:1.926s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Bound.vtk  (time: 0.520s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC_Fluid.vtk  (time: 1.254s)
+damBreak3D_WCSPH-DBC_out/damBreak3D_WCSPH-DBC.xml  (time:0.014s)
+ 
+Computing normals...
+
+*** WARNING: Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+  Evaluating 1,975,146 particles with 22 shapes (distance 2x H = 0.024).
+  Time for computing 2,066,245 normals: 0.564s   Max.Memory: 75.96 MiB
+  Non-zero particle normals: 1,975,146/1,975,146    Normals size range: (0.003000 - 0.025981).
+  Final zero normals: 0/1,975,146 (0.0%)   Maximum normal: 0.0259808 (2.17 x h)
+
+Save files time: 7.691s
+
+Particle limits:
+  X range: -0.01 to 3.23 [m]
+  Y range: -0.01 to 1.01 [m]
+  Z range: -0.01 to 2.012 [m]
+
+[SaveCase3D-End  time:7.903s]
+
+[WARNINGS]
+1. Current <normals> configuration is deprecated (damBreak3D_WCSPH-DBC_Def.xml(row:149)).
+
+Time of execution: 11.788 sec. (1 threads)
+
+Finished execution (code=0).
+
+Geometry for resolutin with initial particle spacing 0.006 was successfuly generated.
+{'dp': 0.006, 'h_coef': 2, 'density': 1000, 'speed_of_sound': 45.17, 'cfl': 0.15, 'particle_mass': 0.000216, 'smoothing_length': 0.012, 'search_radius': 0.024, 'time_step': 3.984945760460482e-05, 'fluid_n': 3014550, 'boundary_n': 1975146, 'domain_origin_x': -0.034169999775364994, 'domain_origin_y': -0.034169999775364994, 'domain_origin_z': -0.034169999775364994, 'domain_end_x': 3.23, 'domain_end_y': 1.01, 'domain_end_z': 2.012, 'domain_size_x': 3.3044400189442187, 'domain_size_y': 1.0733399901909382, 'domain_size_z': 3.088170125660375}
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation initialization.                                 |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Reading fluid particles:                                               sources/dambreak_fluid.vtk |
+| Reading boundary particles:                                         sources/dambreak_boundary.vtk |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                              SPH simulation successfully initialized.                            |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                   SPH simulation configuration.                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Case name:                                                                   damBreak3D_WCSPH-DBC |
++--------------------------------------------------------------------------------------------------+
+| MPI processes:                                                                                  1 |
+| Device type:                                                                    TNL::Devices::GPU |
+| Particle system type:                                    TNL::ParticleSystem::ParticlesLinkedList |
+| SPH model:                                                                    TNL::SPH::WCSPH_DBC |
+| Verbose:                                                                            with-snapshot |
+| Output directory:                                                                         results |
+| Particles format                                                                             auto |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                         TNL::SPH::WCSPH_DBC (delta-WCSPH) model parameters                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Resolution parameters                                                                             |
+|  Initial particle distance (dp):                                                            0.006 |
+|  Smoothing length (h):                                                                      0.012 |
+|  Spatial resolution (h/dp):                                                                     2 |
+|  Particle mass (mass):                                                                   0.000216 |
+| Model parameters                                                                                  |
+|  Diffusive term:                                                   TNL::SPH::MolteniDiffusiveTerm |
+|  Diffusive term coefficient (delta):                                                          0.1 |
+|  Viscous term:                                                      TNL::SPH::ArtificialViscosity |
+|  Artificial vicosity coefficient (alpha):                                                    0.02 |
+|  Equation of state:                                           TNL::SPH::TaitWeaklyCompressibleEOS |
+| Coefficient of EOS (coefB):                                                                291476 |
+|  Speed of sound (speedOfSound):                                                             45.17 |
+|  Referentail density (rho0):                                                                 1000 |
+| Boundary condition type                                                  TNL::SPH::WCSPH_DBC::DBC |
+| Time integration                                                                                  |
+|  Integration scheme:                                            TNL::SPH::WCSPH_DBC::VerletScheme |
+|  Time stepping:                                                        TNL::SPH::ConstantTimeStep |
+|  Initial time step (dtInit):                                                            3.985e-05 |
+| External bulk force:                                                              [ 0, 0, -9.81 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                     Fluid object information.                                    |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      3014550 |
+| Number of allocated particles:                                                            3014550 |
+| Search radius:                                                                              0.024 |
+| Grid origin:                                                     [ -0.03417, -0.03417, -0.03417 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.03417, -0.03417, -0.03417 ] |
+| Grid dimensions:                                                                 [ 140, 47, 131 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.03417, -0.03417, -0.03417 ] |
+| Grid dimension with overlap:                                                     [ 140, 47, 131 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                    Boundary object information:                                  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Particle system parameters:                                                                       |
+| Number of particles:                                                                      1975146 |
+| Number of allocated particles:                                                            1975146 |
+| Search radius:                                                                              0.024 |
+| Grid origin:                                                     [ -0.03417, -0.03417, -0.03417 ] |
+| Grid origin global coordinates:                                                       [ 0, 0, 0 ] |
+| Grid origin global coordinates with overlap:                                          [ 0, 0, 0 ] |
+| Grid referential origin:                                         [ -0.03417, -0.03417, -0.03417 ] |
+| Grid dimensions:                                                                 [ 140, 47, 131 ] |
+| Domain grid overlap width:                                                                      0 |
+| Grid origin with overlap:                                        [ -0.03417, -0.03417, -0.03417 ] |
+| Grid dimension with overlap:                                                     [ 140, 47, 131 ] |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                        System information.                                       |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Host name:                                                                      konos3.fav.zcu.cz |
+| System:                                                                                     Linux |
+| Release:                                                                           6.1.0-41-amd64 |
+| Architecture:                                                                               AMD64 |
+| TNL compiler:                                                               Nvidia NVCC (12.6.68) |
+| CPU info                                                                                          |
+|  Model name:                                            Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz |
+|  Cores:                                                                                        10 |
+|  Threads per core:                                                                              2 |
+|  Max clock rate (in MHz):                                                                    3100 |
+|  Cache (L1d, L1i, L2, L3):                                                     32, 32, 256, 25600 |
+| GPU info                                                                                          |
+|  Name                                                                  NVIDIA GeForce GTX 1080 Ti |
+|  Architecture                                                                                 6.1 |
+|  GPU cores                                                                                   3584 |
+|  Global memory (in GB)                                                                    11.7078 |
+|  ECC enabled                                                                                    0 |
++--------------------------------------------------------------------------------------------------+
+| Started at:                                                             Sun Jan 18 2026, 18:42:27 |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+| Simulation time: 0.000000 s, simulation step: 0                                                   |
+| Current time:                                                           Sun Jan 18 2026, 18:42:28 |
+| Number of fluid particles:                                                                3014550 |
+| Number of allocated fluid particles:                                                      3014550 |
+| Number of boundary particles:                                                             1975146 |
+| Number of allocated fluid particles:                                                      1975146 |
++--------------------------------------------------------------------------------------------------+
+| Saved:                                                       results/fluid_0.000000_particles.vtk |
+| Saved:                                                    results/boundary_0.000000_particles.vtk |
+| Saved:                                                                  results/grid_0.000000.vtk |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                               SPH simulation successfully finished.                              |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| Ended at:                                                               Sun Jan 18 2026, 20:59:37 |
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|                                          Computation time                                        |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+| integrate                                                                                 112.544 |
+| integrate-average                                                                      0.00112058 |
+| integrate-percentage                                                                      1.36844 |
++--------------------------------------------------------------------------------------------------+
+| interact                                                                                  7937.71 |
+| interact-average                                                                        0.0790341 |
+| interact-percentage                                                                       96.5157 |
++--------------------------------------------------------------------------------------------------+
+| search                                                                                    174.014 |
+| search-average                                                                         0.00173262 |
+| search-percentage                                                                         2.11585 |
++--------------------------------------------------------------------------------------------------+
+| search_cellIndices                                                                              0 |
+| search_cellIndices-average                                                                      0 |
+| search_cellIndices-percentage                                                                   0 |
++--------------------------------------------------------------------------------------------------+
+| search_reset                                                                                    0 |
+| search_reset-average                                                                            0 |
+| search_reset-percentage                                                                         0 |
++--------------------------------------------------------------------------------------------------+
+| search_sort                                                                                     0 |
+| search_sort-average                                                                             0 |
+| search_sort-percentage                                                                          0 |
++--------------------------------------------------------------------------------------------------+
+| search_toCells                                                                                  0 |
+| search_toCells-average                                                                          0 |
+| search_toCells-percentage                                                                       0 |
++--------------------------------------------------------------------------------------------------+
+| Total time:                                                                               8224.27 |
++--------------------------------------------------------------------------------------------------+
