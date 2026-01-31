@@ -57,8 +57,27 @@ cd damBreak3D
 
 ```
 
-### Results: 3D dam break (SPHERIC test 2
+### Results: 3D dam break (SPHERIC test 2)
 
 [NVIDIA A100 (details)](results/results_dambreak3D-NVIDIA-A100/results.md)            |  [NVIDIA A40 (details)](results/results_dambreak3D-NVIDIA-A40/results.md)
 :-------------------------:|:-------------------------:
 ![](./results/results_dambreak3D-NVIDIA-A100/results.png)  |  ![](results/results_dambreak3D-NVIDIA-A40/results.png)
+
+
+[NVIDIA GTX 1080 Ti (details)](results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.md)            |  [NVIDIA H100 SXM (details)](results/results_dambreak3D-NVIDIA-H100/results.md)
+:-------------------------:|:-------------------------:
+![](./results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.png)  |  ![](results/results_dambreak3D-NVIDIA-H100/results.png)
+
+
+[NVIDIA GTX 1080 Ti (details)](results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.md)            |  [NVIDIA H100 SXM (details)](results/results_dambreak3D-NVIDIA-H100/results.md)
+:-------------------------:|:-------------------------:
+![](./results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.png)  |  ![](results/results_dambreak3D-NVIDIA-H100/results.png)
+
+[NVIDIA H100 NVL (details)](results/results_dambreak3D-NVIDIA-H100-NVL/results.md)            |  [NVIDIA L40s (details)](results/results_dambreak3D-NVIDIA-L40s/results.md)
+:-------------------------:|:-------------------------:
+![](./results/results_dambreak3D-NVIDIA-H100-NVL/results.png)  |  ![](results/results_dambreak3D-NVIDIA-L40s/results.png)
+
+
+[NVIDIA Quadro RTX 5000 (details)](results/results_dambreak3D-NVIDIA-Quadro-RTX-5000/results.md)            |  [NVIDIA RTX A4000 (details)](results/results_dambreak3D-NVIDIA-RTX-A4000/results.md)
+:-------------------------:|:-------------------------:
+![](./results/results_dambreak3D-NVIDIA-Quadro-RTX-5000/results.png)  |  ![](results/results_dambreak3D-NVIDIA-RTX-A4000/results.png)
