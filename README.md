@@ -69,9 +69,9 @@ cd damBreak3D
 ![](./results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.png)  |  ![](results/results_dambreak3D-NVIDIA-H100/results.png)
 
 
-[NVIDIA GTX 1080 Ti (details)](results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.md)            |  [NVIDIA H100 SXM (details)](results/results_dambreak3D-NVIDIA-H100/results.md)
+[NVIDIA GTX 1080 Ti (details)](results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.md)            |  [NVIDIA H100 NVL (details)](results/results_dambreak3D-NVIDIA-H100-NVL/results.md)
 :-------------------------:|:-------------------------:
-![](./results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.png)  |  ![](results/results_dambreak3D-NVIDIA-H100/results.png)
+![](./results/results_dambreak3D-NVIDIA-GTX-1080-Ti/results.png)  |  ![](results/results_dambreak3D-NVIDIA-H100-NVL/results.png)
 
 [NVIDIA H100 NVL (details)](results/results_dambreak3D-NVIDIA-H100-NVL/results.md)            |  [NVIDIA L40s (details)](results/results_dambreak3D-NVIDIA-L40s/results.md)
 :-------------------------:|:-------------------------:
