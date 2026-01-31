@@ -1,0 +1,20 @@
+{
+	"integrate": "0.248195",
+	"integrate-average": "3.84619e-05",
+	"interaction": "5.24288",
+	"interaction-average": "0.000812472",
+	"pressure-update": "0.0214218",
+	"pressure-update-average": "3.31966e-06",
+	"vcluster": "0.00656004",
+	"vcluster-average": "1.01659e-06",
+	"rebalancing": "0.0888067",
+	"rebalancing-average": "1.37621e-05",
+	"map": "0",
+	"map-average": "0",
+	"reduction": "0.308218",
+	"reduction_total_time-average": "4.77635e-05",
+	"ghost": "0.155297",
+	"ghost-average": "2.40659e-05",
+	"total": "6.23361",
+	"total-average": "0.000966001"
+}

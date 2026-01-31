@@ -1,0 +1,20 @@
+{
+	"CPU cache sizes (L1d, L1i, L2, L3) (kiB)": "32, 32, 1024, 32768",
+	"CPU cores": "6",
+	"CPU max frequency (MHz)": "0.000000",
+	"CPU model name": " AMD EPYC 9454 48-Core Processor",
+	"CPU threads per core": "2",
+	"GPU CUDA cores": "-132",
+	"GPU architecture": "9.0",
+	"GPU global memory (GB)": "99.949806",
+	"GPU memory ECC enabled": "true",
+	"GPU name": "NVIDIA H100 NVL",
+	"OpenMP enabled": "yes",
+	"OpenMP threads": "1",
+	"architecture": "AMD64",
+	"compiler": "Nvidia NVCC (12.6.68)",
+	"host name": "bee9.cerit-sc.cz",
+	"start time": "Sat Jan 24 2026, 21:55:29",
+	"system": "Linux",
+	"system release": "6.1.0-38-amd64"
+}
