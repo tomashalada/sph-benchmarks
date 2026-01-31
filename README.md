@@ -59,6 +59,8 @@ cd damBreak3D
 
 ### Results: 3D dam break (SPHERIC test 2)
 
+**NOTE:** We compare the average computational time per single time step. The OpenFPM total times do not match the comparison as we extended the physical time used in the benchmark. For the total time comparison, the OpenFPM benchmarks need to be carried again.
+
 [NVIDIA A100 (details)](results/results_dambreak3D-NVIDIA-A100/results.md)            |  [NVIDIA A40 (details)](results/results_dambreak3D-NVIDIA-A40/results.md)
 :-------------------------:|:-------------------------:
 ![](./results/results_dambreak3D-NVIDIA-A100/results.png)  |  ![](results/results_dambreak3D-NVIDIA-A40/results.png)
